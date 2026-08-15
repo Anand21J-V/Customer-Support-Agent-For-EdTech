@@ -41,6 +41,13 @@ class Settings(BaseSettings):
     top_k_bm25: int = 10
     top_k_final: int = 5
 
+    # Local embeddings (Phase 2 - open source)
+    embedding_model: str = "BAAI/bge-small-en-v1.5"
+    embedding_dimension: int = 384
+    knowledge_docx_path: str = "knowledge-base/Student-Policy-knowledge-base.docx"
+    bm25_cache_path: str = "data/evaluation/bm25_corpus.json"
+    ingest_manifest_path: str = "data/evaluation/ingest_manifest.json"
+
     # LangSmith
     langsmith_tracing: bool = False
     langsmith_api_key: str = ""

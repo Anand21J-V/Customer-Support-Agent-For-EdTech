@@ -176,10 +176,139 @@ docker-compose.yml
 
 ---
 
+## Phase 2 — Qdrant Foundation (Open Source)
+
+This phase adds hybrid knowledge retrieval using:
+
+- **Qdrant** (Docker) for vector search
+- **sentence-transformers** (`BAAI/bge-small-en-v1.5`, 384-dim) for local embeddings
+- **rank-bm25** for keyword search
+
+Knowledge source: [`knowledge-base/Student-Policy-knowledge-base.docx`](knowledge-base/Student-Policy-knowledge-base.docx)
+
+Do **not** ingest [`knowledge-base/Student-dataset.csv`](knowledge-base/Student-dataset.csv). That CSV is for router/evaluation in later phases.
+
+No Gemini API key is required for Phase 2.
+
+### Step 1: Start Qdrant
+
+```powershell
+docker compose up qdrant -d
+curl http://localhost:6333/healthz
+```
+
+Dashboard: `http://localhost:6333/dashboard`
+
+Do not start Docker MySQL if you are already using local MySQL on port `3306`.
+
+### Step 2: Configure embedding settings
+
+Ensure your `.env` includes:
+
+```env
+EMBEDDING_MODEL=BAAI/bge-small-en-v1.5
+EMBEDDING_DIMENSION=384
+KNOWLEDGE_DOCX_PATH=knowledge-base/Student-Policy-knowledge-base.docx
+BM25_CACHE_PATH=data/evaluation/bm25_corpus.json
+INGEST_MANIFEST_PATH=data/evaluation/ingest_manifest.json
+```
+
+The first embedding run downloads the model weights once (~130MB).
+
+### Step 3: Ingest the knowledge base
+
+```powershell
+python scripts/ingest_knowledge.py
+```
+
+This will:
+
+1. Parse 20 policy sections from the DOCX
+2. Create semantic chunks with metadata
+3. Embed chunks locally
+4. Upsert vectors into Qdrant
+5. Write BM25 manifest files under `data/evaluation/`
+
+### Step 4: Run Phase 2 tests
+
+Offline parser/chunking/embedding tests:
+
+```powershell
+pytest tests/retrieval/test_docx_parser.py tests/retrieval/test_chunking.py tests/retrieval/test_embeddings.py -q
+```
+
+Hybrid retrieval integration tests (requires Qdrant + ingest):
+
+```powershell
+pytest tests/retrieval/test_hybrid_search.py -q
+```
+
+Exit criteria query:
+
+```text
+Can I get my money back after cancelling?
+```
+
+Expected: top results include `POL-REFUND-001`.
+
+### Hybrid search API (library only)
+
+```python
+from app.retrieval.hybrid import hybrid_search
+
+results = hybrid_search("Can I get my money back after cancelling?")
+```
+
+Phase 2 does not add new FastAPI endpoints. Existing `/health` behavior is unchanged.
+
+### Troubleshooting
+
+- `Could not connect to Qdrant` → run `docker compose up qdrant -d`
+- `Qdrant collection is empty` → run `python scripts/ingest_knowledge.py`
+- Slow first run → sentence-transformers is downloading the model
+- Reset Qdrant data → `docker compose down` then remove the `qdrant_data` volume if needed
+
+---
+
+## Project structure (Phase 2)
+
+```text
+app/
+  main.py
+  config.py
+  api/
+    health.py
+  db/
+    ...
+  retrieval/
+    docx_parser.py
+    chunking.py
+    embeddings.py
+    qdrant_client.py
+    bm25_index.py
+    hybrid.py
+  schemas/
+    knowledge.py
+knowledge-base/
+  Student-Policy-knowledge-base.docx
+  Student-dataset.csv
+data/
+  evaluation/
+scripts/
+  seed_mysql.py
+  ingest_knowledge.py
+tests/
+  unit/
+  integration/
+  retrieval/
+docker-compose.yml
+```
+
+---
+
 ## Next phases
 
-- Phase 2: Qdrant knowledge retrieval
-- Phase 3: Gemini client integration
+- Phase 3: LLM client integration
 - Phase 4+: Intent router, agents, LangGraph orchestration
 
 See `Skill/Students_plan.md` for the full build plan.
