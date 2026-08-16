@@ -1,0 +1,4008 @@
+{
+  "version": "1.0",
+  "created_at": "2026-08-16T19:50:16.335092+00:00",
+  "seed": 42,
+  "per_intent": 25,
+  "cases": [
+    {
+      "id": "reg_0001",
+      "query": "I have a problem: i was enrolled but the course still shows as locked after making the payment. What should I do?",
+      "expected_intent": "course_access",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 3262
+    },
+    {
+      "id": "reg_0002",
+      "query": "Hi, i was enrolled but the course still shows as locked while using the mobile app. Could you help?",
+      "expected_intent": "course_access",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 562
+    },
+    {
+      "id": "reg_0003",
+      "query": "Hello, my course is not visible in my dashboard after I enrolled at the moment. Can you guide me?",
+      "expected_intent": "course_access",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 122
+    },
+    {
+      "id": "reg_0004",
+      "query": "Hi, why is my purchased course unavailable for my enrolled course?",
+      "expected_intent": "course_access",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 3782
+    },
+    {
+      "id": "reg_0005",
+      "query": "Hi, i cannot access my course after enrolling while using the web portal. Could you help?",
+      "expected_intent": "course_access",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 1402
+    },
+    {
+      "id": "reg_0006",
+      "query": "Hello, the course page is not opening for me after making the payment. What should I do?",
+      "expected_intent": "course_access",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 1242
+    },
+    {
+      "id": "reg_0007",
+      "query": "Can you help me: the course page is not opening for me after I enrolled in the mobile app.",
+      "expected_intent": "course_access",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 1142
+    },
+    {
+      "id": "reg_0008",
+      "query": "Hi, i cannot access my course after enrolling for my enrolled course. Please let me know what I should do.",
+      "expected_intent": "course_access",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 702
+    },
+    {
+      "id": "reg_0009",
+      "query": "Hello, i was enrolled but the course still shows as locked for my enrolled course. What should I do?",
+      "expected_intent": "course_access",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 3762
+    },
+    {
+      "id": "reg_0010",
+      "query": "I need help: my course is not visible in my dashboard while using the mobile app. Could you help?",
+      "expected_intent": "course_access",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 522
+    },
+    {
+      "id": "reg_0011",
+      "query": "I need help: i was enrolled but the course still shows as locked while using the web portal. Could you help?",
+      "expected_intent": "course_access",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 3462
+    },
+    {
+      "id": "reg_0012",
+      "query": "Can you help me: my course is not visible in my dashboard since yesterday in the mobile app.",
+      "expected_intent": "course_access",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 4922
+    },
+    {
+      "id": "reg_0013",
+      "query": "Could you help me with this: i was enrolled but the course still shows as locked while using the mobile app on the course page. What should I do?",
+      "expected_intent": "course_access",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 4562
+    },
+    {
+      "id": "reg_0014",
+      "query": "Hello, why is my purchased course unavailable for my enrolled course? Please advise.",
+      "expected_intent": "course_access",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 2782
+    },
+    {
+      "id": "reg_0015",
+      "query": "Can you help me: the course page is not opening for me while using the web portal. Could you help?",
+      "expected_intent": "course_access",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 442
+    },
+    {
+      "id": "reg_0016",
+      "query": "Could you help me with this: my course is not visible in my dashboard. Can you guide me?",
+      "expected_intent": "course_access",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 3022
+    },
+    {
+      "id": "reg_0017",
+      "query": "Please help me with this issue: i was enrolled but the course still shows as locked after I enrolled today. Could you help?",
+      "expected_intent": "course_access",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 2162
+    },
+    {
+      "id": "reg_0018",
+      "query": "Can you help me: i was enrolled but the course still shows as locked after I enrolled. Please let me know what I should do.",
+      "expected_intent": "course_access",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 162
+    },
+    {
+      "id": "reg_0019",
+      "query": "Hi, the course page is not opening for me after I enrolled. Could you help?",
+      "expected_intent": "course_access",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 142
+    },
+    {
+      "id": "reg_0020",
+      "query": "I have a problem: i was enrolled but the course still shows as locked while using the web portal. Can you guide me?",
+      "expected_intent": "course_access",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 462
+    },
+    {
+      "id": "reg_0021",
+      "query": "Hello, i cannot access my course after enrolling after I enrolled. Please advise.",
+      "expected_intent": "course_access",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 1102
+    },
+    {
+      "id": "reg_0022",
+      "query": "Please help me with this issue: why is my purchased course unavailable after I enrolled?",
+      "expected_intent": "course_access",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 1182
+    },
+    {
+      "id": "reg_0023",
+      "query": "Please help me with this issue: why is my purchased course unavailable while using the mobile app? Could you help?",
+      "expected_intent": "course_access",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 2582
+    },
+    {
+      "id": "reg_0024",
+      "query": "Hi, why is my purchased course unavailable? Could you help?",
+      "expected_intent": "course_access",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 3082
+    },
+    {
+      "id": "reg_0025",
+      "query": "I have a problem: the course page is not opening for me since yesterday. What should I do?",
+      "expected_intent": "course_access",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 4942
+    },
+    {
+      "id": "reg_0026",
+      "query": "I have a problem: why did my course enrollment fail after today's class?",
+      "expected_intent": "enrollment",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 2863
+    },
+    {
+      "id": "reg_0027",
+      "query": "Hi, how can I enroll in a course? Can you guide me?",
+      "expected_intent": "enrollment",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 1003
+    },
+    {
+      "id": "reg_0028",
+      "query": "Hi, why did my course enrollment fail for my current course? Please advise.",
+      "expected_intent": "enrollment",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 3663
+    },
+    {
+      "id": "reg_0029",
+      "query": "Could you help me with this: my course enrollment is still pending from my dashboard after enrolling.",
+      "expected_intent": "enrollment",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 3323
+    },
+    {
+      "id": "reg_0030",
+      "query": "Please help me with this issue: can I change my enrolled course while using the mobile app? Please advise.",
+      "expected_intent": "enrollment",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 3583
+    },
+    {
+      "id": "reg_0031",
+      "query": "I need help: can I change my enrolled course for my enrolled course? Please advise.",
+      "expected_intent": "enrollment",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 2783
+    },
+    {
+      "id": "reg_0032",
+      "query": "Can you help me: i enrolled in the wrong course. What should I do after I enrolled? Can you guide me?",
+      "expected_intent": "enrollment",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 2143
+    },
+    {
+      "id": "reg_0033",
+      "query": "Hello, my course enrollment is still pending after I enrolled. Please let me know what I should do.",
+      "expected_intent": "enrollment",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 1123
+    },
+    {
+      "id": "reg_0034",
+      "query": "Can you help me: can I change my enrolled course after making the payment? Please advise.",
+      "expected_intent": "enrollment",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 2283
+    },
+    {
+      "id": "reg_0035",
+      "query": "I have a problem: how can I enroll in a course? Could you help?",
+      "expected_intent": "enrollment",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 3003
+    },
+    {
+      "id": "reg_0036",
+      "query": "Hi, my course enrollment is still pending while using the web portal. Can you guide me?",
+      "expected_intent": "enrollment",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 1423
+    },
+    {
+      "id": "reg_0037",
+      "query": "Please help me with this issue: i enrolled in the wrong course. What should I do after I enrolled? What should I do?",
+      "expected_intent": "enrollment",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 4143
+    },
+    {
+      "id": "reg_0038",
+      "query": "Could you help me with this: i enrolled in the wrong course. What should I do while using the web portal? Please let me know what I should do.",
+      "expected_intent": "enrollment",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 4443
+    },
+    {
+      "id": "reg_0039",
+      "query": "Hi, my course enrollment is still pending right now. What should I do?",
+      "expected_intent": "enrollment",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 23
+    },
+    {
+      "id": "reg_0040",
+      "query": "Could you help me with this: can I change my enrolled course after today's class? Could you help?",
+      "expected_intent": "enrollment",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 3883
+    },
+    {
+      "id": "reg_0041",
+      "query": "I have a problem: my course enrollment is still pending after I enrolled.",
+      "expected_intent": "enrollment",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 4123
+    },
+    {
+      "id": "reg_0042",
+      "query": "Could you help me with this: how can I enroll in a course after today's class?",
+      "expected_intent": "enrollment",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 803
+    },
+    {
+      "id": "reg_0043",
+      "query": "I have a problem: why did my course enrollment fail while using the mobile app? Please let me know what I should do.",
+      "expected_intent": "enrollment",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 3563
+    },
+    {
+      "id": "reg_0044",
+      "query": "I have a problem: why did my course enrollment fail after I enrolled? Could you help?",
+      "expected_intent": "enrollment",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 2163
+    },
+    {
+      "id": "reg_0045",
+      "query": "I have a problem: i enrolled in the wrong course. What should I do for my enrolled course? Could you help?",
+      "expected_intent": "enrollment",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 1743
+    },
+    {
+      "id": "reg_0046",
+      "query": "Hi, can I change my enrolled course for my enrolled course? Can you guide me?",
+      "expected_intent": "enrollment",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 4783
+    },
+    {
+      "id": "reg_0047",
+      "query": "Please help me with this issue: can I change my enrolled course for my enrolled course? What should I do?",
+      "expected_intent": "enrollment",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 783
+    },
+    {
+      "id": "reg_0048",
+      "query": "I need help: how can I enroll in a course after I enrolled? Please advise.",
+      "expected_intent": "enrollment",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 1103
+    },
+    {
+      "id": "reg_0049",
+      "query": "I need help: how can I enroll in a course since yesterday? Can you guide me?",
+      "expected_intent": "enrollment",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 3903
+    },
+    {
+      "id": "reg_0050",
+      "query": "Can you help me: my course enrollment is still pending for my enrolled course. Can you guide me?",
+      "expected_intent": "enrollment",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 1723
+    },
+    {
+      "id": "reg_0051",
+      "query": "Please help me with this issue: the amount was deducted but my payment shows failed while using the mobile app at the moment. Could you help?",
+      "expected_intent": "payment",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 524
+    },
+    {
+      "id": "reg_0052",
+      "query": "Hi, how can I check my payment status while using the web portal?",
+      "expected_intent": "payment",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 464
+    },
+    {
+      "id": "reg_0053",
+      "query": "Could you help me with this: i was charged twice for the same course since yesterday. Please advise.",
+      "expected_intent": "payment",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 1944
+    },
+    {
+      "id": "reg_0054",
+      "query": "Can you help me: my payment is still pending while using the web portal. Could you help?",
+      "expected_intent": "payment",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 484
+    },
+    {
+      "id": "reg_0055",
+      "query": "I need help: the amount was deducted but my payment shows failed after today's class. Could you help?",
+      "expected_intent": "payment",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 1824
+    },
+    {
+      "id": "reg_0056",
+      "query": "Could you help me with this: the amount was deducted but my payment shows failed from my dashboard. Can you guide me?",
+      "expected_intent": "payment",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 4324
+    },
+    {
+      "id": "reg_0057",
+      "query": "I have a problem: how can I check my payment status for my enrolled course? Can you guide me?",
+      "expected_intent": "payment",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 1764
+    },
+    {
+      "id": "reg_0058",
+      "query": "I need help: my payment is still pending. Could you help?",
+      "expected_intent": "payment",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 3084
+    },
+    {
+      "id": "reg_0059",
+      "query": "I have a problem: i was charged twice for the same course from my dashboard. Can you guide me?",
+      "expected_intent": "payment",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 1344
+    },
+    {
+      "id": "reg_0060",
+      "query": "Can you help me: the amount was deducted but my payment shows failed after I enrolled on the course page.",
+      "expected_intent": "payment",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 4124
+    },
+    {
+      "id": "reg_0061",
+      "query": "I have a problem: the amount was deducted but my payment shows failed after making the payment from my student account. Please advise.",
+      "expected_intent": "payment",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 224
+    },
+    {
+      "id": "reg_0062",
+      "query": "I have a problem: the amount was deducted but my payment shows failed for my enrolled course. What should I do?",
+      "expected_intent": "payment",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 3724
+    },
+    {
+      "id": "reg_0063",
+      "query": "Please help me with this issue: i was charged twice for the same course from my dashboard. Please let me know what I should do.",
+      "expected_intent": "payment",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 2344
+    },
+    {
+      "id": "reg_0064",
+      "query": "I have a problem: i was charged twice for the same course for my enrolled course from my student account. Please advise.",
+      "expected_intent": "payment",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 2744
+    },
+    {
+      "id": "reg_0065",
+      "query": "Can you help me: the amount was deducted but my payment shows failed for my current course. Please let me know what I should do.",
+      "expected_intent": "payment",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 624
+    },
+    {
+      "id": "reg_0066",
+      "query": "Please help me with this issue: the amount was deducted but my payment shows failed since yesterday. Please let me know what I should do.",
+      "expected_intent": "payment",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 1924
+    },
+    {
+      "id": "reg_0067",
+      "query": "Could you help me with this: my payment failed while buying a course while using the web portal after enrolling. What should I do?",
+      "expected_intent": "payment",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 404
+    },
+    {
+      "id": "reg_0068",
+      "query": "Hello, the amount was deducted but my payment shows failed after today's class. Please advise.",
+      "expected_intent": "payment",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 2824
+    },
+    {
+      "id": "reg_0069",
+      "query": "Please help me with this issue: my payment failed while buying a course while using the mobile app. Please let me know what I should do.",
+      "expected_intent": "payment",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 1504
+    },
+    {
+      "id": "reg_0070",
+      "query": "Hi, i was charged twice for the same course after making the payment today.",
+      "expected_intent": "payment",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 4244
+    },
+    {
+      "id": "reg_0071",
+      "query": "Could you help me with this: my payment failed while buying a course after making the payment. Please advise.",
+      "expected_intent": "payment",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 3204
+    },
+    {
+      "id": "reg_0072",
+      "query": "I have a problem: how can I check my payment status after I enrolled? Please advise.",
+      "expected_intent": "payment",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 3164
+    },
+    {
+      "id": "reg_0073",
+      "query": "Hi, the amount was deducted but my payment shows failed while using the mobile app. Please let me know what I should do.",
+      "expected_intent": "payment",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 4524
+    },
+    {
+      "id": "reg_0074",
+      "query": "Can you help me: my payment failed while buying a course while using the web portal. Please let me know what I should do.",
+      "expected_intent": "payment",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 4404
+    },
+    {
+      "id": "reg_0075",
+      "query": "Hello, i was charged twice for the same course after today's class currently. Can you guide me?",
+      "expected_intent": "payment",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 1844
+    },
+    {
+      "id": "reg_0076",
+      "query": "Could you help me with this: my refund has not reached my account since yesterday right now.",
+      "expected_intent": "refund",
+      "expected_route": "knowledge",
+      "user_type": "student",
+      "source_row": 2945
+    },
+    {
+      "id": "reg_0077",
+      "query": "Could you help me with this: i want to cancel my course and request a refund since yesterday. Could you help?",
+      "expected_intent": "refund",
+      "expected_route": "knowledge",
+      "user_type": "student",
+      "source_row": 985
+    },
+    {
+      "id": "reg_0078",
+      "query": "I have a problem: how can I request a refund for my current course? Please let me know what I should do.",
+      "expected_intent": "refund",
+      "expected_route": "knowledge",
+      "user_type": "student",
+      "source_row": 3605
+    },
+    {
+      "id": "reg_0079",
+      "query": "Hi, my refund has not reached my account from my dashboard. Please advise.",
+      "expected_intent": "refund",
+      "expected_route": "knowledge",
+      "user_type": "student",
+      "source_row": 345
+    },
+    {
+      "id": "reg_0080",
+      "query": "Can you help me: am I eligible for a course refund after making the payment? Please advise.",
+      "expected_intent": "refund",
+      "expected_route": "knowledge",
+      "user_type": "student",
+      "source_row": 225
+    },
+    {
+      "id": "reg_0081",
+      "query": "I need help: i want to cancel my course and request a refund from my dashboard. What should I do?",
+      "expected_intent": "refund",
+      "expected_route": "knowledge",
+      "user_type": "student",
+      "source_row": 3385
+    },
+    {
+      "id": "reg_0082",
+      "query": "Hello, how long does a refund normally take after I enrolled? Please let me know what I should do.",
+      "expected_intent": "refund",
+      "expected_route": "knowledge",
+      "user_type": "student",
+      "source_row": 1165
+    },
+    {
+      "id": "reg_0083",
+      "query": "I need help: my refund has not reached my account since yesterday. Can you guide me?",
+      "expected_intent": "refund",
+      "expected_route": "knowledge",
+      "user_type": "student",
+      "source_row": 3945
+    },
+    {
+      "id": "reg_0084",
+      "query": "Can you help me: i want to cancel my course and request a refund while using the web portal. Please advise.",
+      "expected_intent": "refund",
+      "expected_route": "knowledge",
+      "user_type": "student",
+      "source_row": 1485
+    },
+    {
+      "id": "reg_0085",
+      "query": "Please help me with this issue: how can I request a refund while using the web portal? What should I do?",
+      "expected_intent": "refund",
+      "expected_route": "knowledge",
+      "user_type": "student",
+      "source_row": 405
+    },
+    {
+      "id": "reg_0086",
+      "query": "I need help: how long does a refund normally take from my dashboard? Can you guide me?",
+      "expected_intent": "refund",
+      "expected_route": "knowledge",
+      "user_type": "student",
+      "source_row": 4365
+    },
+    {
+      "id": "reg_0087",
+      "query": "Hi, i want to cancel my course and request a refund after I enrolled. Please advise.",
+      "expected_intent": "refund",
+      "expected_route": "knowledge",
+      "user_type": "student",
+      "source_row": 1185
+    },
+    {
+      "id": "reg_0088",
+      "query": "Can you help me: am I eligible for a course refund while using the web portal? Please advise.",
+      "expected_intent": "refund",
+      "expected_route": "knowledge",
+      "user_type": "student",
+      "source_row": 4425
+    },
+    {
+      "id": "reg_0089",
+      "query": "Can you help me: how can I request a refund while using the mobile app? Can you guide me?",
+      "expected_intent": "refund",
+      "expected_route": "knowledge",
+      "user_type": "student",
+      "source_row": 505
+    },
+    {
+      "id": "reg_0090",
+      "query": "Please help me with this issue: my refund has not reached my account since yesterday. Please advise.",
+      "expected_intent": "refund",
+      "expected_route": "knowledge",
+      "user_type": "student",
+      "source_row": 1945
+    },
+    {
+      "id": "reg_0091",
+      "query": "I need help: am I eligible for a course refund while using the web portal? Can you guide me?",
+      "expected_intent": "refund",
+      "expected_route": "knowledge",
+      "user_type": "student",
+      "source_row": 1425
+    },
+    {
+      "id": "reg_0092",
+      "query": "Can you help me: am I eligible for a course refund from my dashboard? Please advise.",
+      "expected_intent": "refund",
+      "expected_route": "knowledge",
+      "user_type": "student",
+      "source_row": 2325
+    },
+    {
+      "id": "reg_0093",
+      "query": "I need help: my refund has not reached my account after making the payment in the mobile app. Please advise.",
+      "expected_intent": "refund",
+      "expected_route": "knowledge",
+      "user_type": "student",
+      "source_row": 3245
+    },
+    {
+      "id": "reg_0094",
+      "query": "Hi, how long does a refund normally take after making the payment? What should I do?",
+      "expected_intent": "refund",
+      "expected_route": "knowledge",
+      "user_type": "student",
+      "source_row": 4265
+    },
+    {
+      "id": "reg_0095",
+      "query": "Hello, how long does a refund normally take after today's class? Could you help?",
+      "expected_intent": "refund",
+      "expected_route": "knowledge",
+      "user_type": "student",
+      "source_row": 1865
+    },
+    {
+      "id": "reg_0096",
+      "query": "Please help me with this issue: am I eligible for a course refund after today's class? What should I do?",
+      "expected_intent": "refund",
+      "expected_route": "knowledge",
+      "user_type": "student",
+      "source_row": 825
+    },
+    {
+      "id": "reg_0097",
+      "query": "Hi, i want to cancel my course and request a refund after today's class. Can you guide me?",
+      "expected_intent": "refund",
+      "expected_route": "knowledge",
+      "user_type": "student",
+      "source_row": 1885
+    },
+    {
+      "id": "reg_0098",
+      "query": "Please help me with this issue: how can I request a refund after today's class? Can you guide me?",
+      "expected_intent": "refund",
+      "expected_route": "knowledge",
+      "user_type": "student",
+      "source_row": 1805
+    },
+    {
+      "id": "reg_0099",
+      "query": "Can you help me: how long does a refund normally take? Please advise.",
+      "expected_intent": "refund",
+      "expected_route": "knowledge",
+      "user_type": "student",
+      "source_row": 1065
+    },
+    {
+      "id": "reg_0100",
+      "query": "Hi, am I eligible for a course refund while using the web portal? What should I do?",
+      "expected_intent": "refund",
+      "expected_route": "knowledge",
+      "user_type": "student",
+      "source_row": 3425
+    },
+    {
+      "id": "reg_0101",
+      "query": "Can you help me: how can I download my certificate from my dashboard? Could you help?",
+      "expected_intent": "certificate",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 1366
+    },
+    {
+      "id": "reg_0102",
+      "query": "Hi, my certificate is not showing in my account while using the mobile app. Could you help?",
+      "expected_intent": "certificate",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 3586
+    },
+    {
+      "id": "reg_0103",
+      "query": "Could you help me with this: my certificate is not showing in my account for my enrolled course. Can you guide me?",
+      "expected_intent": "certificate",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 4786
+    },
+    {
+      "id": "reg_0104",
+      "query": "I have a problem: my certificate is not showing in my account while using the web portal. Can you guide me?",
+      "expected_intent": "certificate",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 3486
+    },
+    {
+      "id": "reg_0105",
+      "query": "Hi, i completed my course but cannot find my certificate from my dashboard. Please let me know what I should do.",
+      "expected_intent": "certificate",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 3306
+    },
+    {
+      "id": "reg_0106",
+      "query": "Hi, how can I download my certificate from my dashboard? Please let me know what I should do.",
+      "expected_intent": "certificate",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 366
+    },
+    {
+      "id": "reg_0107",
+      "query": "Could you help me with this: i completed my course but cannot find my certificate after I enrolled. Can you guide me?",
+      "expected_intent": "certificate",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 3106
+    },
+    {
+      "id": "reg_0108",
+      "query": "Could you help me with this: my certificate has the wrong name after making the payment. Please advise.",
+      "expected_intent": "certificate",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 3246
+    },
+    {
+      "id": "reg_0109",
+      "query": "Could you help me with this: how can I download my certificate after today's class? What should I do?",
+      "expected_intent": "certificate",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 866
+    },
+    {
+      "id": "reg_0110",
+      "query": "Hello, when will my course certificate be issued for my enrolled course? Can you guide me?",
+      "expected_intent": "certificate",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 2726
+    },
+    {
+      "id": "reg_0111",
+      "query": "Hi, when will my course certificate be issued for my enrolled course? Please let me know what I should do.",
+      "expected_intent": "certificate",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 3726
+    },
+    {
+      "id": "reg_0112",
+      "query": "I have a problem: my certificate has the wrong name after making the payment. What should I do?",
+      "expected_intent": "certificate",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 1246
+    },
+    {
+      "id": "reg_0113",
+      "query": "I have a problem: when will my course certificate be issued after today's class? What should I do?",
+      "expected_intent": "certificate",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 826
+    },
+    {
+      "id": "reg_0114",
+      "query": "I have a problem: how can I download my certificate from my dashboard? Please advise.",
+      "expected_intent": "certificate",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 2366
+    },
+    {
+      "id": "reg_0115",
+      "query": "I have a problem: my certificate has the wrong name since yesterday on the learning portal. Please advise.",
+      "expected_intent": "certificate",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 1946
+    },
+    {
+      "id": "reg_0116",
+      "query": "I have a problem: my certificate is not showing in my account from my dashboard. Can you guide me?",
+      "expected_intent": "certificate",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 1386
+    },
+    {
+      "id": "reg_0117",
+      "query": "I need help: how can I download my certificate after making the payment? Please let me know what I should do.",
+      "expected_intent": "certificate",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 3266
+    },
+    {
+      "id": "reg_0118",
+      "query": "Could you help me with this: when will my course certificate be issued while using the mobile app? Can you guide me?",
+      "expected_intent": "certificate",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 3526
+    },
+    {
+      "id": "reg_0119",
+      "query": "I need help: my certificate has the wrong name after today's class in the mobile app. Please let me know what I should do.",
+      "expected_intent": "certificate",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 2846
+    },
+    {
+      "id": "reg_0120",
+      "query": "Please help me with this issue: when will my course certificate be issued after I enrolled? Please let me know what I should do.",
+      "expected_intent": "certificate",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 1126
+    },
+    {
+      "id": "reg_0121",
+      "query": "Please help me with this issue: i completed my course but cannot find my certificate while using the mobile app currently. Could you help?",
+      "expected_intent": "certificate",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 3506
+    },
+    {
+      "id": "reg_0122",
+      "query": "I have a problem: how can I download my certificate for my current course? What should I do?",
+      "expected_intent": "certificate",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 1666
+    },
+    {
+      "id": "reg_0123",
+      "query": "Can you help me: i completed my course but cannot find my certificate from my dashboard. Could you help?",
+      "expected_intent": "certificate",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 4306
+    },
+    {
+      "id": "reg_0124",
+      "query": "Please help me with this issue: when will my course certificate be issued since yesterday? Could you help?",
+      "expected_intent": "certificate",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 3926
+    },
+    {
+      "id": "reg_0125",
+      "query": "I need help: how can I download my certificate since yesterday? Could you help?",
+      "expected_intent": "certificate",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 3966
+    },
+    {
+      "id": "reg_0126",
+      "query": "I have a problem: can I resubmit an assignment after making the payment? Please let me know what I should do.",
+      "expected_intent": "assignment",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 287
+    },
+    {
+      "id": "reg_0127",
+      "query": "Could you help me with this: my assignment submission is not visible after I enrolled. Please let me know what I should do.",
+      "expected_intent": "assignment",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 1167
+    },
+    {
+      "id": "reg_0128",
+      "query": "I have a problem: i cannot submit my assignment after making the payment.",
+      "expected_intent": "assignment",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 4207
+    },
+    {
+      "id": "reg_0129",
+      "query": "Please help me with this issue: my assignment submission is not visible after I enrolled currently. Can you guide me?",
+      "expected_intent": "assignment",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 167
+    },
+    {
+      "id": "reg_0130",
+      "query": "I need help: how can I upload an assignment after I enrolled? Please advise.",
+      "expected_intent": "assignment",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 4127
+    },
+    {
+      "id": "reg_0131",
+      "query": "I need help: i cannot submit my assignment for my current course on the course page. Please advise.",
+      "expected_intent": "assignment",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 1607
+    },
+    {
+      "id": "reg_0132",
+      "query": "Hello, what is the deadline for my assignment? Please let me know what I should do.",
+      "expected_intent": "assignment",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 2047
+    },
+    {
+      "id": "reg_0133",
+      "query": "Hi, my assignment submission is not visible from my dashboard at the moment. What should I do?",
+      "expected_intent": "assignment",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 1367
+    },
+    {
+      "id": "reg_0134",
+      "query": "Could you help me with this: how can I upload an assignment from my dashboard? Please let me know what I should do.",
+      "expected_intent": "assignment",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 327
+    },
+    {
+      "id": "reg_0135",
+      "query": "Hi, can I resubmit an assignment? Can you guide me?",
+      "expected_intent": "assignment",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 1087
+    },
+    {
+      "id": "reg_0136",
+      "query": "Could you help me with this: my assignment submission is not visible for my current course today.",
+      "expected_intent": "assignment",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 4667
+    },
+    {
+      "id": "reg_0137",
+      "query": "Hi, i cannot submit my assignment since yesterday. Please advise.",
+      "expected_intent": "assignment",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 2907
+    },
+    {
+      "id": "reg_0138",
+      "query": "I have a problem: can I resubmit an assignment while using the web portal? Please let me know what I should do.",
+      "expected_intent": "assignment",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 4487
+    },
+    {
+      "id": "reg_0139",
+      "query": "Please help me with this issue: my assignment submission is not visible for my current course. Please advise.",
+      "expected_intent": "assignment",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 3667
+    },
+    {
+      "id": "reg_0140",
+      "query": "Can you help me: can I resubmit an assignment after today's class? Please advise.",
+      "expected_intent": "assignment",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 4887
+    },
+    {
+      "id": "reg_0141",
+      "query": "Could you help me with this: i cannot submit my assignment after today's class. Could you help?",
+      "expected_intent": "assignment",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 4807
+    },
+    {
+      "id": "reg_0142",
+      "query": "Can you help me: what is the deadline for my assignment from my dashboard? What should I do?",
+      "expected_intent": "assignment",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 3347
+    },
+    {
+      "id": "reg_0143",
+      "query": "Please help me with this issue: what is the deadline for my assignment while using the mobile app? What should I do?",
+      "expected_intent": "assignment",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 2547
+    },
+    {
+      "id": "reg_0144",
+      "query": "I need help: how can I upload an assignment? Please advise.",
+      "expected_intent": "assignment",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 2027
+    },
+    {
+      "id": "reg_0145",
+      "query": "Could you help me with this: how can I upload an assignment while using the mobile app? Please let me know what I should do.",
+      "expected_intent": "assignment",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 4527
+    },
+    {
+      "id": "reg_0146",
+      "query": "I need help: can I resubmit an assignment after making the payment? Please advise.",
+      "expected_intent": "assignment",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 3287
+    },
+    {
+      "id": "reg_0147",
+      "query": "Hi, what is the deadline for my assignment from my dashboard? Can you guide me?",
+      "expected_intent": "assignment",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 2347
+    },
+    {
+      "id": "reg_0148",
+      "query": "Please help me with this issue: how can I upload an assignment for my enrolled course? Please advise.",
+      "expected_intent": "assignment",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 727
+    },
+    {
+      "id": "reg_0149",
+      "query": "Hello, what is the deadline for my assignment from my dashboard?",
+      "expected_intent": "assignment",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 1347
+    },
+    {
+      "id": "reg_0150",
+      "query": "I have a problem: i cannot submit my assignment for my enrolled course on the learning portal. Please let me know what I should do.",
+      "expected_intent": "assignment",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 707
+    },
+    {
+      "id": "reg_0151",
+      "query": "Can you help me: when will my exam result be available after making the payment?",
+      "expected_intent": "exam",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 1268
+    },
+    {
+      "id": "reg_0152",
+      "query": "I have a problem: when is my next exam after today's class? What should I do?",
+      "expected_intent": "exam",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 3808
+    },
+    {
+      "id": "reg_0153",
+      "query": "Could you help me with this: when will my exam result be available after today's class? Please advise.",
+      "expected_intent": "exam",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 2868
+    },
+    {
+      "id": "reg_0154",
+      "query": "I need help: what should I do if my exam page crashes for my enrolled course? Could you help?",
+      "expected_intent": "exam",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 2748
+    },
+    {
+      "id": "reg_0155",
+      "query": "I need help: what should I do if my exam page crashes from my dashboard?",
+      "expected_intent": "exam",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 1348
+    },
+    {
+      "id": "reg_0156",
+      "query": "Please help me with this issue: how can I access my online exam after today's class?",
+      "expected_intent": "exam",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 3828
+    },
+    {
+      "id": "reg_0157",
+      "query": "Please help me with this issue: what are the rules for the online exam since yesterday?",
+      "expected_intent": "exam",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 2988
+    },
+    {
+      "id": "reg_0158",
+      "query": "I need help: what are the rules for the online exam after I enrolled?",
+      "expected_intent": "exam",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 2188
+    },
+    {
+      "id": "reg_0159",
+      "query": "Hello, what are the rules for the online exam while using the mobile app? Please advise.",
+      "expected_intent": "exam",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 4588
+    },
+    {
+      "id": "reg_0160",
+      "query": "Hello, when will my exam result be available after today's class? Can you guide me?",
+      "expected_intent": "exam",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 4868
+    },
+    {
+      "id": "reg_0161",
+      "query": "I need help: what should I do if my exam page crashes? Please let me know what I should do.",
+      "expected_intent": "exam",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 2048
+    },
+    {
+      "id": "reg_0162",
+      "query": "I have a problem: what should I do if my exam page crashes after today's class? Can you guide me?",
+      "expected_intent": "exam",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 1848
+    },
+    {
+      "id": "reg_0163",
+      "query": "Can you help me: how can I access my online exam after I enrolled? Please let me know what I should do.",
+      "expected_intent": "exam",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 1128
+    },
+    {
+      "id": "reg_0164",
+      "query": "Can you help me: when is my next exam for my enrolled course? Please let me know what I should do.",
+      "expected_intent": "exam",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 708
+    },
+    {
+      "id": "reg_0165",
+      "query": "I need help: when is my next exam for my current course?",
+      "expected_intent": "exam",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 2608
+    },
+    {
+      "id": "reg_0166",
+      "query": "Can you help me: how can I access my online exam while using the mobile app?",
+      "expected_intent": "exam",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 2528
+    },
+    {
+      "id": "reg_0167",
+      "query": "Please help me with this issue: when will my exam result be available while using the web portal?",
+      "expected_intent": "exam",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 468
+    },
+    {
+      "id": "reg_0168",
+      "query": "I need help: when will my exam result be available after today's class?",
+      "expected_intent": "exam",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 3868
+    },
+    {
+      "id": "reg_0169",
+      "query": "Hello, what should I do if my exam page crashes after making the payment? Can you guide me?",
+      "expected_intent": "exam",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 248
+    },
+    {
+      "id": "reg_0170",
+      "query": "Could you help me with this: when is my next exam while using the web portal? Can you guide me?",
+      "expected_intent": "exam",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 4408
+    },
+    {
+      "id": "reg_0171",
+      "query": "Can you help me: when will my exam result be available while using the mobile app? Could you help?",
+      "expected_intent": "exam",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 568
+    },
+    {
+      "id": "reg_0172",
+      "query": "I need help: what are the rules for the online exam for my enrolled course? Please let me know what I should do.",
+      "expected_intent": "exam",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 788
+    },
+    {
+      "id": "reg_0173",
+      "query": "Hi, when is my next exam after making the payment? Could you help?",
+      "expected_intent": "exam",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 3208
+    },
+    {
+      "id": "reg_0174",
+      "query": "Hello, when is my next exam after today's class? Please advise.",
+      "expected_intent": "exam",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 808
+    },
+    {
+      "id": "reg_0175",
+      "query": "Hi, what should I do if my exam page crashes? Could you help?",
+      "expected_intent": "exam",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 4048
+    },
+    {
+      "id": "reg_0176",
+      "query": "Hello, the app crashes when I open my course while using the web portal.",
+      "expected_intent": "technical_issue",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 3489
+    },
+    {
+      "id": "reg_0177",
+      "query": "Please help me with this issue: i cannot open the lesson material after I enrolled. What should I do?",
+      "expected_intent": "technical_issue",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 2169
+    },
+    {
+      "id": "reg_0178",
+      "query": "I need help: the course page loads very slowly. What should I do?",
+      "expected_intent": "technical_issue",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 3049
+    },
+    {
+      "id": "reg_0179",
+      "query": "I have a problem: the learning platform keeps showing an error from my dashboard in the mobile app. Please let me know what I should do.",
+      "expected_intent": "technical_issue",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 329
+    },
+    {
+      "id": "reg_0180",
+      "query": "Hi, i cannot open the lesson material since yesterday. Can you guide me?",
+      "expected_intent": "technical_issue",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 1969
+    },
+    {
+      "id": "reg_0181",
+      "query": "Hello, the course page loads very slowly since yesterday on the learning portal. Could you help?",
+      "expected_intent": "technical_issue",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 1949
+    },
+    {
+      "id": "reg_0182",
+      "query": "I have a problem: the course page loads very slowly since yesterday in the mobile app. Please let me know what I should do.",
+      "expected_intent": "technical_issue",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 4949
+    },
+    {
+      "id": "reg_0183",
+      "query": "Hi, the app crashes when I open my course from my dashboard. Can you guide me?",
+      "expected_intent": "technical_issue",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 2389
+    },
+    {
+      "id": "reg_0184",
+      "query": "I have a problem: my course video is not playing for my enrolled course. Could you help?",
+      "expected_intent": "technical_issue",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 2709
+    },
+    {
+      "id": "reg_0185",
+      "query": "Can you help me: the app crashes when I open my course after making the payment right now. What should I do?",
+      "expected_intent": "technical_issue",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 1289
+    },
+    {
+      "id": "reg_0186",
+      "query": "Can you help me: the learning platform keeps showing an error after today's class. Please advise.",
+      "expected_intent": "technical_issue",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 2829
+    },
+    {
+      "id": "reg_0187",
+      "query": "Please help me with this issue: my course video is not playing while using the web portal after logging in. Can you guide me?",
+      "expected_intent": "technical_issue",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 4409
+    },
+    {
+      "id": "reg_0188",
+      "query": "I have a problem: the course page loads very slowly.",
+      "expected_intent": "technical_issue",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 49
+    },
+    {
+      "id": "reg_0189",
+      "query": "Could you help me with this: the app crashes when I open my course since yesterday. Please let me know what I should do.",
+      "expected_intent": "technical_issue",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 4989
+    },
+    {
+      "id": "reg_0190",
+      "query": "I have a problem: the app crashes when I open my course for my current course in the mobile app. Please let me know what I should do.",
+      "expected_intent": "technical_issue",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 3689
+    },
+    {
+      "id": "reg_0191",
+      "query": "Can you help me: the app crashes when I open my course while using the mobile app. Can you guide me?",
+      "expected_intent": "technical_issue",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 589
+    },
+    {
+      "id": "reg_0192",
+      "query": "I need help: the learning platform keeps showing an error for my enrolled course. What should I do?",
+      "expected_intent": "technical_issue",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 4729
+    },
+    {
+      "id": "reg_0193",
+      "query": "I have a problem: the learning platform keeps showing an error while using the mobile app in the mobile app. Please let me know what I should do.",
+      "expected_intent": "technical_issue",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 4529
+    },
+    {
+      "id": "reg_0194",
+      "query": "Could you help me with this: the course page loads very slowly for my enrolled course. Could you help?",
+      "expected_intent": "technical_issue",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 2749
+    },
+    {
+      "id": "reg_0195",
+      "query": "Please help me with this issue: the course page loads very slowly after today's class. What should I do?",
+      "expected_intent": "technical_issue",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 3849
+    },
+    {
+      "id": "reg_0196",
+      "query": "I need help: i cannot open the lesson material from my dashboard. What should I do?",
+      "expected_intent": "technical_issue",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 1369
+    },
+    {
+      "id": "reg_0197",
+      "query": "Hi, the learning platform keeps showing an error since yesterday currently. What should I do?",
+      "expected_intent": "technical_issue",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 3929
+    },
+    {
+      "id": "reg_0198",
+      "query": "Please help me with this issue: the app crashes when I open my course after making the payment. Please advise.",
+      "expected_intent": "technical_issue",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 3289
+    },
+    {
+      "id": "reg_0199",
+      "query": "Please help me with this issue: the course page loads very slowly for my enrolled course. What should I do?",
+      "expected_intent": "technical_issue",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 1749
+    },
+    {
+      "id": "reg_0200",
+      "query": "Hi, i cannot open the lesson material while using the mobile app currently. What should I do?",
+      "expected_intent": "technical_issue",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 569
+    },
+    {
+      "id": "reg_0201",
+      "query": "Could you help me with this: i cannot log in to my student account while using the mobile app. Can you guide me?",
+      "expected_intent": "account",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 1510
+    },
+    {
+      "id": "reg_0202",
+      "query": "I need help: how can I reset my password after making the payment?",
+      "expected_intent": "account",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 2230
+    },
+    {
+      "id": "reg_0203",
+      "query": "Could you help me with this: i cannot log in to my student account after today's class. Please advise.",
+      "expected_intent": "account",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 810
+    },
+    {
+      "id": "reg_0204",
+      "query": "Please help me with this issue: how can I reset my password from my dashboard? Could you help?",
+      "expected_intent": "account",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 2330
+    },
+    {
+      "id": "reg_0205",
+      "query": "Hello, i cannot log in to my student account. Please advise.",
+      "expected_intent": "account",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 10
+    },
+    {
+      "id": "reg_0206",
+      "query": "I need help: how can I change my registered phone number after today's class? Could you help?",
+      "expected_intent": "account",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 4890
+    },
+    {
+      "id": "reg_0207",
+      "query": "Can you help me: how can I change my registered phone number for my current course? Please let me know what I should do.",
+      "expected_intent": "account",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 3690
+    },
+    {
+      "id": "reg_0208",
+      "query": "Hello, how can I change my registered phone number while using the web portal? Can you guide me?",
+      "expected_intent": "account",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 4490
+    },
+    {
+      "id": "reg_0209",
+      "query": "Could you help me with this: i forgot the email linked to my account after today's class. Can you guide me?",
+      "expected_intent": "account",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 4870
+    },
+    {
+      "id": "reg_0210",
+      "query": "Please help me with this issue: i need to update my account information from my dashboard.",
+      "expected_intent": "account",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 1350
+    },
+    {
+      "id": "reg_0211",
+      "query": "Can you help me: i forgot the email linked to my account while using the mobile app today.",
+      "expected_intent": "account",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 2570
+    },
+    {
+      "id": "reg_0212",
+      "query": "I need help: i cannot log in to my student account since yesterday.",
+      "expected_intent": "account",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 3910
+    },
+    {
+      "id": "reg_0213",
+      "query": "I have a problem: i cannot log in to my student account since yesterday. What should I do?",
+      "expected_intent": "account",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 910
+    },
+    {
+      "id": "reg_0214",
+      "query": "I have a problem: how can I change my registered phone number while using the mobile app? What should I do?",
+      "expected_intent": "account",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 2590
+    },
+    {
+      "id": "reg_0215",
+      "query": "Can you help me: i forgot the email linked to my account for my current course today.",
+      "expected_intent": "account",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 4670
+    },
+    {
+      "id": "reg_0216",
+      "query": "I need help: i need to update my account information while using the mobile app.",
+      "expected_intent": "account",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 550
+    },
+    {
+      "id": "reg_0217",
+      "query": "Could you help me with this: i need to update my account information while using the web portal. Can you guide me?",
+      "expected_intent": "account",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 4450
+    },
+    {
+      "id": "reg_0218",
+      "query": "I need help: i cannot log in to my student account after making the payment. Could you help?",
+      "expected_intent": "account",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 3210
+    },
+    {
+      "id": "reg_0219",
+      "query": "I need help: how can I reset my password while using the mobile app? Could you help?",
+      "expected_intent": "account",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 1530
+    },
+    {
+      "id": "reg_0220",
+      "query": "Could you help me with this: i cannot log in to my student account from my dashboard at the moment. What should I do?",
+      "expected_intent": "account",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 4310
+    },
+    {
+      "id": "reg_0221",
+      "query": "Can you help me: i forgot the email linked to my account after making the payment. Please let me know what I should do.",
+      "expected_intent": "account",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 3270
+    },
+    {
+      "id": "reg_0222",
+      "query": "Could you help me with this: how can I reset my password for my enrolled course? What should I do?",
+      "expected_intent": "account",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 4730
+    },
+    {
+      "id": "reg_0223",
+      "query": "Hi, i cannot log in to my student account after I enrolled after logging in.",
+      "expected_intent": "account",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 3110
+    },
+    {
+      "id": "reg_0224",
+      "query": "Hi, i cannot log in to my student account after logging in.",
+      "expected_intent": "account",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 1010
+    },
+    {
+      "id": "reg_0225",
+      "query": "Please help me with this issue: how can I change my registered phone number for my enrolled course? Please let me know what I should do.",
+      "expected_intent": "account",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 790
+    },
+    {
+      "id": "reg_0226",
+      "query": "I have a problem: what topics are covered in this course since yesterday? Could you help?",
+      "expected_intent": "course_information",
+      "expected_route": "knowledge",
+      "user_type": "student",
+      "source_row": 1911
+    },
+    {
+      "id": "reg_0227",
+      "query": "Could you help me with this: what topics are covered in this course since yesterday?",
+      "expected_intent": "course_information",
+      "expected_route": "knowledge",
+      "user_type": "student",
+      "source_row": 3911
+    },
+    {
+      "id": "reg_0228",
+      "query": "Could you help me with this: how long does the course take to complete after today's class? Please let me know what I should do.",
+      "expected_intent": "course_information",
+      "expected_route": "knowledge",
+      "user_type": "student",
+      "source_row": 831
+    },
+    {
+      "id": "reg_0229",
+      "query": "Please help me with this issue: is this course suitable for beginners for my enrolled course? Can you guide me?",
+      "expected_intent": "course_information",
+      "expected_route": "knowledge",
+      "user_type": "student",
+      "source_row": 2771
+    },
+    {
+      "id": "reg_0230",
+      "query": "Could you help me with this: how can I see the course syllabus after today's class? Could you help?",
+      "expected_intent": "course_information",
+      "expected_route": "knowledge",
+      "user_type": "student",
+      "source_row": 4891
+    },
+    {
+      "id": "reg_0231",
+      "query": "Can you help me: how can I see the course syllabus since yesterday? Can you guide me?",
+      "expected_intent": "course_information",
+      "expected_route": "knowledge",
+      "user_type": "student",
+      "source_row": 3991
+    },
+    {
+      "id": "reg_0232",
+      "query": "Please help me with this issue: how long does the course take to complete for my enrolled course? What should I do?",
+      "expected_intent": "course_information",
+      "expected_route": "knowledge",
+      "user_type": "student",
+      "source_row": 4731
+    },
+    {
+      "id": "reg_0233",
+      "query": "Hi, what topics are covered in this course for my enrolled course? What should I do?",
+      "expected_intent": "course_information",
+      "expected_route": "knowledge",
+      "user_type": "student",
+      "source_row": 2711
+    },
+    {
+      "id": "reg_0234",
+      "query": "I have a problem: what topics are covered in this course for my enrolled course?",
+      "expected_intent": "course_information",
+      "expected_route": "knowledge",
+      "user_type": "student",
+      "source_row": 4711
+    },
+    {
+      "id": "reg_0235",
+      "query": "I need help: what topics are covered in this course? Please advise.",
+      "expected_intent": "course_information",
+      "expected_route": "knowledge",
+      "user_type": "student",
+      "source_row": 11
+    },
+    {
+      "id": "reg_0236",
+      "query": "Could you help me with this: is this course suitable for beginners?",
+      "expected_intent": "course_information",
+      "expected_route": "knowledge",
+      "user_type": "student",
+      "source_row": 3071
+    },
+    {
+      "id": "reg_0237",
+      "query": "Please help me with this issue: does the course include projects for my current course? Please advise.",
+      "expected_intent": "course_information",
+      "expected_route": "knowledge",
+      "user_type": "student",
+      "source_row": 1651
+    },
+    {
+      "id": "reg_0238",
+      "query": "Could you help me with this: what topics are covered in this course while using the mobile app? Please let me know what I should do.",
+      "expected_intent": "course_information",
+      "expected_route": "knowledge",
+      "user_type": "student",
+      "source_row": 2511
+    },
+    {
+      "id": "reg_0239",
+      "query": "I have a problem: how can I see the course syllabus?",
+      "expected_intent": "course_information",
+      "expected_route": "knowledge",
+      "user_type": "student",
+      "source_row": 91
+    },
+    {
+      "id": "reg_0240",
+      "query": "I need help: is this course suitable for beginners while using the mobile app? What should I do?",
+      "expected_intent": "course_information",
+      "expected_route": "knowledge",
+      "user_type": "student",
+      "source_row": 571
+    },
+    {
+      "id": "reg_0241",
+      "query": "Hello, does the course include projects after today's class?",
+      "expected_intent": "course_information",
+      "expected_route": "knowledge",
+      "user_type": "student",
+      "source_row": 1851
+    },
+    {
+      "id": "reg_0242",
+      "query": "I need help: how can I see the course syllabus while using the web portal? Can you guide me?",
+      "expected_intent": "course_information",
+      "expected_route": "knowledge",
+      "user_type": "student",
+      "source_row": 4491
+    },
+    {
+      "id": "reg_0243",
+      "query": "Hi, does the course include projects after making the payment? Please advise.",
+      "expected_intent": "course_information",
+      "expected_route": "knowledge",
+      "user_type": "student",
+      "source_row": 4251
+    },
+    {
+      "id": "reg_0244",
+      "query": "Can you help me: how long does the course take to complete after I enrolled? Please advise.",
+      "expected_intent": "course_information",
+      "expected_route": "knowledge",
+      "user_type": "student",
+      "source_row": 4131
+    },
+    {
+      "id": "reg_0245",
+      "query": "Hello, is this course suitable for beginners while using the mobile app? Could you help?",
+      "expected_intent": "course_information",
+      "expected_route": "knowledge",
+      "user_type": "student",
+      "source_row": 1571
+    },
+    {
+      "id": "reg_0246",
+      "query": "Please help me with this issue: how long does the course take to complete after making the payment? Please advise.",
+      "expected_intent": "course_information",
+      "expected_route": "knowledge",
+      "user_type": "student",
+      "source_row": 1231
+    },
+    {
+      "id": "reg_0247",
+      "query": "I need help: how can I see the course syllabus after making the payment? Can you guide me?",
+      "expected_intent": "course_information",
+      "expected_route": "knowledge",
+      "user_type": "student",
+      "source_row": 291
+    },
+    {
+      "id": "reg_0248",
+      "query": "Please help me with this issue: how can I see the course syllabus while using the mobile app? Please advise.",
+      "expected_intent": "course_information",
+      "expected_route": "knowledge",
+      "user_type": "student",
+      "source_row": 4591
+    },
+    {
+      "id": "reg_0249",
+      "query": "Hi, is this course suitable for beginners for my current course? Please advise.",
+      "expected_intent": "course_information",
+      "expected_route": "knowledge",
+      "user_type": "student",
+      "source_row": 4671
+    },
+    {
+      "id": "reg_0250",
+      "query": "Please help me with this issue: what topics are covered in this course since yesterday? Please advise.",
+      "expected_intent": "course_information",
+      "expected_route": "knowledge",
+      "user_type": "student",
+      "source_row": 2911
+    },
+    {
+      "id": "reg_0251",
+      "query": "Can you help me: can I change my scheduled class after today's class? Could you help?",
+      "expected_intent": "schedule",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 4852
+    },
+    {
+      "id": "reg_0252",
+      "query": "Please help me with this issue: when is my next live class while using the web portal? Please let me know what I should do.",
+      "expected_intent": "schedule",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 412
+    },
+    {
+      "id": "reg_0253",
+      "query": "Could you help me with this: where can I see my class schedule while using the web portal? Please advise.",
+      "expected_intent": "schedule",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 432
+    },
+    {
+      "id": "reg_0254",
+      "query": "I have a problem: can I change my scheduled class for my enrolled course? Please advise.",
+      "expected_intent": "schedule",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 3752
+    },
+    {
+      "id": "reg_0255",
+      "query": "I have a problem: i missed a scheduled class. What are my options while using the web portal? Please advise.",
+      "expected_intent": "schedule",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 2492
+    },
+    {
+      "id": "reg_0256",
+      "query": "I have a problem: what time does my live session start after I enrolled? Please advise.",
+      "expected_intent": "schedule",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 4172
+    },
+    {
+      "id": "reg_0257",
+      "query": "Hi, can I change my scheduled class from my dashboard? Could you help?",
+      "expected_intent": "schedule",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 352
+    },
+    {
+      "id": "reg_0258",
+      "query": "I have a problem: i missed a scheduled class. What are my options after today's class? What should I do?",
+      "expected_intent": "schedule",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 3892
+    },
+    {
+      "id": "reg_0259",
+      "query": "Hi, where can I see my class schedule for my enrolled course?",
+      "expected_intent": "schedule",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 2732
+    },
+    {
+      "id": "reg_0260",
+      "query": "Could you help me with this: where can I see my class schedule since yesterday? What should I do?",
+      "expected_intent": "schedule",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 3932
+    },
+    {
+      "id": "reg_0261",
+      "query": "Can you help me: can I change my scheduled class for my current course? Could you help?",
+      "expected_intent": "schedule",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 652
+    },
+    {
+      "id": "reg_0262",
+      "query": "I need help: i missed a scheduled class. What are my options for my enrolled course?",
+      "expected_intent": "schedule",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 4792
+    },
+    {
+      "id": "reg_0263",
+      "query": "Could you help me with this: what time does my live session start from my dashboard? Please advise.",
+      "expected_intent": "schedule",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 3372
+    },
+    {
+      "id": "reg_0264",
+      "query": "Hello, where can I see my class schedule while using the web portal? Can you guide me?",
+      "expected_intent": "schedule",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 2432
+    },
+    {
+      "id": "reg_0265",
+      "query": "Could you help me with this: when is my next live class after today's class? Can you guide me?",
+      "expected_intent": "schedule",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 2812
+    },
+    {
+      "id": "reg_0266",
+      "query": "Could you help me with this: can I change my scheduled class after today's class? Please advise.",
+      "expected_intent": "schedule",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 852
+    },
+    {
+      "id": "reg_0267",
+      "query": "Can you help me: can I change my scheduled class from my dashboard?",
+      "expected_intent": "schedule",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 1352
+    },
+    {
+      "id": "reg_0268",
+      "query": "Hello, when is my next live class for my enrolled course? What should I do?",
+      "expected_intent": "schedule",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 2712
+    },
+    {
+      "id": "reg_0269",
+      "query": "Please help me with this issue: what time does my live session start while using the web portal? Could you help?",
+      "expected_intent": "schedule",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 4472
+    },
+    {
+      "id": "reg_0270",
+      "query": "I need help: when is my next live class after I enrolled?",
+      "expected_intent": "schedule",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 3112
+    },
+    {
+      "id": "reg_0271",
+      "query": "Hi, what time does my live session start after I enrolled? Please let me know what I should do.",
+      "expected_intent": "schedule",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 2172
+    },
+    {
+      "id": "reg_0272",
+      "query": "I have a problem: i missed a scheduled class. What are my options? Can you guide me?",
+      "expected_intent": "schedule",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 1092
+    },
+    {
+      "id": "reg_0273",
+      "query": "I have a problem: what time does my live session start for my enrolled course? Can you guide me?",
+      "expected_intent": "schedule",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 2772
+    },
+    {
+      "id": "reg_0274",
+      "query": "Can you help me: what time does my live session start after today's class?",
+      "expected_intent": "schedule",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 3872
+    },
+    {
+      "id": "reg_0275",
+      "query": "Can you help me: where can I see my class schedule for my enrolled course? Please let me know what I should do.",
+      "expected_intent": "schedule",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 3732
+    },
+    {
+      "id": "reg_0276",
+      "query": "Could you help me with this: how can I contact my course tutor while using the mobile app?",
+      "expected_intent": "tutor_support",
+      "expected_route": "escalation",
+      "user_type": "student",
+      "source_row": 3533
+    },
+    {
+      "id": "reg_0277",
+      "query": "I need help: how can I contact my course tutor? What should I do?",
+      "expected_intent": "tutor_support",
+      "expected_route": "escalation",
+      "user_type": "student",
+      "source_row": 1033
+    },
+    {
+      "id": "reg_0278",
+      "query": "Please help me with this issue: can I request a different tutor for my current course? Can you guide me?",
+      "expected_intent": "tutor_support",
+      "expected_route": "escalation",
+      "user_type": "student",
+      "source_row": 3653
+    },
+    {
+      "id": "reg_0279",
+      "query": "I need help: how can I reschedule a tutor session while using the mobile app? Can you guide me?",
+      "expected_intent": "tutor_support",
+      "expected_route": "escalation",
+      "user_type": "student",
+      "source_row": 1593
+    },
+    {
+      "id": "reg_0280",
+      "query": "Hi, can I request a different tutor? Can you guide me?",
+      "expected_intent": "tutor_support",
+      "expected_route": "escalation",
+      "user_type": "student",
+      "source_row": 2053
+    },
+    {
+      "id": "reg_0281",
+      "query": "Hello, how can I contact my course tutor while using the web portal? Please let me know what I should do.",
+      "expected_intent": "tutor_support",
+      "expected_route": "escalation",
+      "user_type": "student",
+      "source_row": 3433
+    },
+    {
+      "id": "reg_0282",
+      "query": "Can you help me: how can I contact my course tutor from my dashboard? Please advise.",
+      "expected_intent": "tutor_support",
+      "expected_route": "escalation",
+      "user_type": "student",
+      "source_row": 3333
+    },
+    {
+      "id": "reg_0283",
+      "query": "Hi, my tutor has not responded to my question since yesterday from my student account. What should I do?",
+      "expected_intent": "tutor_support",
+      "expected_route": "escalation",
+      "user_type": "student",
+      "source_row": 1913
+    },
+    {
+      "id": "reg_0284",
+      "query": "Please help me with this issue: can I request a different tutor after making the payment? What should I do?",
+      "expected_intent": "tutor_support",
+      "expected_route": "escalation",
+      "user_type": "student",
+      "source_row": 2253
+    },
+    {
+      "id": "reg_0285",
+      "query": "I have a problem: my tutor has not responded to my question for my current course after enrolling. Please let me know what I should do.",
+      "expected_intent": "tutor_support",
+      "expected_route": "escalation",
+      "user_type": "student",
+      "source_row": 4613
+    },
+    {
+      "id": "reg_0286",
+      "query": "I have a problem: can I request a different tutor for my current course?",
+      "expected_intent": "tutor_support",
+      "expected_route": "escalation",
+      "user_type": "student",
+      "source_row": 2653
+    },
+    {
+      "id": "reg_0287",
+      "query": "Hello, my tutor has not responded to my question from my dashboard.",
+      "expected_intent": "tutor_support",
+      "expected_route": "escalation",
+      "user_type": "student",
+      "source_row": 2313
+    },
+    {
+      "id": "reg_0288",
+      "query": "I need help: my tutor has not responded to my question for my current course. What should I do?",
+      "expected_intent": "tutor_support",
+      "expected_route": "escalation",
+      "user_type": "student",
+      "source_row": 613
+    },
+    {
+      "id": "reg_0289",
+      "query": "Please help me with this issue: my tutoring session was cancelled after making the payment. Please advise.",
+      "expected_intent": "tutor_support",
+      "expected_route": "escalation",
+      "user_type": "student",
+      "source_row": 1273
+    },
+    {
+      "id": "reg_0290",
+      "query": "Could you help me with this: can I request a different tutor after I enrolled? Could you help?",
+      "expected_intent": "tutor_support",
+      "expected_route": "escalation",
+      "user_type": "student",
+      "source_row": 1153
+    },
+    {
+      "id": "reg_0291",
+      "query": "I need help: how can I contact my course tutor from my dashboard? Can you guide me?",
+      "expected_intent": "tutor_support",
+      "expected_route": "escalation",
+      "user_type": "student",
+      "source_row": 333
+    },
+    {
+      "id": "reg_0292",
+      "query": "I need help: how can I contact my course tutor for my enrolled course? Please advise.",
+      "expected_intent": "tutor_support",
+      "expected_route": "escalation",
+      "user_type": "student",
+      "source_row": 1733
+    },
+    {
+      "id": "reg_0293",
+      "query": "Can you help me: my tutor has not responded to my question after I enrolled at the moment. What should I do?",
+      "expected_intent": "tutor_support",
+      "expected_route": "escalation",
+      "user_type": "student",
+      "source_row": 113
+    },
+    {
+      "id": "reg_0294",
+      "query": "Hello, my tutor has not responded to my question. Please let me know what I should do.",
+      "expected_intent": "tutor_support",
+      "expected_route": "escalation",
+      "user_type": "student",
+      "source_row": 3013
+    },
+    {
+      "id": "reg_0295",
+      "query": "Could you help me with this: how can I contact my course tutor after today's class? Could you help?",
+      "expected_intent": "tutor_support",
+      "expected_route": "escalation",
+      "user_type": "student",
+      "source_row": 2833
+    },
+    {
+      "id": "reg_0296",
+      "query": "I need help: my tutoring session was cancelled after I enrolled. Can you guide me?",
+      "expected_intent": "tutor_support",
+      "expected_route": "escalation",
+      "user_type": "student",
+      "source_row": 1173
+    },
+    {
+      "id": "reg_0297",
+      "query": "Please help me with this issue: how can I contact my course tutor for my current course? Please advise.",
+      "expected_intent": "tutor_support",
+      "expected_route": "escalation",
+      "user_type": "student",
+      "source_row": 4633
+    },
+    {
+      "id": "reg_0298",
+      "query": "Please help me with this issue: how can I contact my course tutor after I enrolled? Can you guide me?",
+      "expected_intent": "tutor_support",
+      "expected_route": "escalation",
+      "user_type": "student",
+      "source_row": 1133
+    },
+    {
+      "id": "reg_0299",
+      "query": "Could you help me with this: how can I contact my course tutor? Please let me know what I should do.",
+      "expected_intent": "tutor_support",
+      "expected_route": "escalation",
+      "user_type": "student",
+      "source_row": 33
+    },
+    {
+      "id": "reg_0300",
+      "query": "Hi, my tutoring session was cancelled from my dashboard. Can you guide me?",
+      "expected_intent": "tutor_support",
+      "expected_route": "escalation",
+      "user_type": "student",
+      "source_row": 373
+    },
+    {
+      "id": "reg_0301",
+      "query": "Can you help me: why is my completed lesson still showing as incomplete for my current course? Could you help?",
+      "expected_intent": "progress",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 3634
+    },
+    {
+      "id": "reg_0302",
+      "query": "I have a problem: why is my completed lesson still showing as incomplete after making the payment? Can you guide me?",
+      "expected_intent": "progress",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 3234
+    },
+    {
+      "id": "reg_0303",
+      "query": "Please help me with this issue: how can I check my course progress from my dashboard? Could you help?",
+      "expected_intent": "progress",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 314
+    },
+    {
+      "id": "reg_0304",
+      "query": "Could you help me with this: where can I see my learning progress after I enrolled? Can you guide me?",
+      "expected_intent": "progress",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 1174
+    },
+    {
+      "id": "reg_0305",
+      "query": "I need help: my progress percentage has not updated from my dashboard. Could you help?",
+      "expected_intent": "progress",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 354
+    },
+    {
+      "id": "reg_0306",
+      "query": "I have a problem: why is my completed lesson still showing as incomplete for my current course? Please advise.",
+      "expected_intent": "progress",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 4634
+    },
+    {
+      "id": "reg_0307",
+      "query": "Please help me with this issue: where can I see my learning progress after I enrolled?",
+      "expected_intent": "progress",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 174
+    },
+    {
+      "id": "reg_0308",
+      "query": "I need help: how can I check my course progress while using the web portal?",
+      "expected_intent": "progress",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 4414
+    },
+    {
+      "id": "reg_0309",
+      "query": "I have a problem: how do I know which lessons I still need to complete for my current course? Please advise.",
+      "expected_intent": "progress",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 1694
+    },
+    {
+      "id": "reg_0310",
+      "query": "Hello, where can I see my learning progress from my dashboard? Can you guide me?",
+      "expected_intent": "progress",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 374
+    },
+    {
+      "id": "reg_0311",
+      "query": "Hi, why is my completed lesson still showing as incomplete for my current course? Please let me know what I should do.",
+      "expected_intent": "progress",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 2634
+    },
+    {
+      "id": "reg_0312",
+      "query": "Hello, how can I check my course progress after making the payment? Can you guide me?",
+      "expected_intent": "progress",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 1214
+    },
+    {
+      "id": "reg_0313",
+      "query": "Please help me with this issue: why is my completed lesson still showing as incomplete while using the web portal?",
+      "expected_intent": "progress",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 1434
+    },
+    {
+      "id": "reg_0314",
+      "query": "I need help: why is my completed lesson still showing as incomplete while using the web portal? Please let me know what I should do.",
+      "expected_intent": "progress",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 3434
+    },
+    {
+      "id": "reg_0315",
+      "query": "Hi, how do I know which lessons I still need to complete while using the web portal? Could you help?",
+      "expected_intent": "progress",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 2494
+    },
+    {
+      "id": "reg_0316",
+      "query": "Hi, how do I know which lessons I still need to complete?",
+      "expected_intent": "progress",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 1094
+    },
+    {
+      "id": "reg_0317",
+      "query": "Hi, where can I see my learning progress for my enrolled course?",
+      "expected_intent": "progress",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 2774
+    },
+    {
+      "id": "reg_0318",
+      "query": "Hi, where can I see my learning progress for my current course?",
+      "expected_intent": "progress",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 674
+    },
+    {
+      "id": "reg_0319",
+      "query": "I need help: how can I check my course progress for my enrolled course? Could you help?",
+      "expected_intent": "progress",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 3714
+    },
+    {
+      "id": "reg_0320",
+      "query": "Please help me with this issue: how can I check my course progress while using the mobile app? Could you help?",
+      "expected_intent": "progress",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 4514
+    },
+    {
+      "id": "reg_0321",
+      "query": "Can you help me: why is my completed lesson still showing as incomplete since yesterday? Please let me know what I should do.",
+      "expected_intent": "progress",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 2934
+    },
+    {
+      "id": "reg_0322",
+      "query": "I have a problem: my progress percentage has not updated since yesterday right now. Please advise.",
+      "expected_intent": "progress",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 2954
+    },
+    {
+      "id": "reg_0323",
+      "query": "Could you help me with this: why is my completed lesson still showing as incomplete while using the web portal? Can you guide me?",
+      "expected_intent": "progress",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 2434
+    },
+    {
+      "id": "reg_0324",
+      "query": "Can you help me: my progress percentage has not updated after making the payment. Please let me know what I should do.",
+      "expected_intent": "progress",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 1254
+    },
+    {
+      "id": "reg_0325",
+      "query": "Hello, how can I check my course progress? What should I do?",
+      "expected_intent": "progress",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 4014
+    },
+    {
+      "id": "reg_0326",
+      "query": "Please help me with this issue: my attendance was marked incorrectly while using the web portal in the mobile app. Can you guide me?",
+      "expected_intent": "attendance",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 2435
+    },
+    {
+      "id": "reg_0327",
+      "query": "Could you help me with this: my attendance was marked incorrectly after I enrolled. Could you help?",
+      "expected_intent": "attendance",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 4135
+    },
+    {
+      "id": "reg_0328",
+      "query": "Hi, how is attendance calculated? Can you guide me?",
+      "expected_intent": "attendance",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 2095
+    },
+    {
+      "id": "reg_0329",
+      "query": "Hi, can I make up for a missed class since yesterday? Please advise.",
+      "expected_intent": "attendance",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 975
+    },
+    {
+      "id": "reg_0330",
+      "query": "Could you help me with this: how is attendance calculated while using the web portal? Please let me know what I should do.",
+      "expected_intent": "attendance",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 495
+    },
+    {
+      "id": "reg_0331",
+      "query": "Can you help me: where can I check my class attendance since yesterday? Can you guide me?",
+      "expected_intent": "attendance",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 4915
+    },
+    {
+      "id": "reg_0332",
+      "query": "Can you help me: can I make up for a missed class from my dashboard? Please advise.",
+      "expected_intent": "attendance",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 3375
+    },
+    {
+      "id": "reg_0333",
+      "query": "Hello, where can I check my class attendance after making the payment? Please let me know what I should do.",
+      "expected_intent": "attendance",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 2215
+    },
+    {
+      "id": "reg_0334",
+      "query": "Hi, where can I check my class attendance after today's class? Please advise.",
+      "expected_intent": "attendance",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 1815
+    },
+    {
+      "id": "reg_0335",
+      "query": "Could you help me with this: can I make up for a missed class after I enrolled? Please let me know what I should do.",
+      "expected_intent": "attendance",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 2175
+    },
+    {
+      "id": "reg_0336",
+      "query": "Can you help me: where can I check my class attendance after I enrolled? Please advise.",
+      "expected_intent": "attendance",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 2115
+    },
+    {
+      "id": "reg_0337",
+      "query": "Can you help me: how is attendance calculated from my dashboard? Can you guide me?",
+      "expected_intent": "attendance",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 2395
+    },
+    {
+      "id": "reg_0338",
+      "query": "I need help: my attendance was marked incorrectly while using the web portal. What should I do?",
+      "expected_intent": "attendance",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 4435
+    },
+    {
+      "id": "reg_0339",
+      "query": "I need help: my attendance was marked incorrectly for my enrolled course. Can you guide me?",
+      "expected_intent": "attendance",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 3735
+    },
+    {
+      "id": "reg_0340",
+      "query": "Hi, can I make up for a missed class after making the payment? What should I do?",
+      "expected_intent": "attendance",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 275
+    },
+    {
+      "id": "reg_0341",
+      "query": "I need help: why is my attendance missing while using the web portal? Please advise.",
+      "expected_intent": "attendance",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 3455
+    },
+    {
+      "id": "reg_0342",
+      "query": "Hi, why is my attendance missing from my dashboard? Can you guide me?",
+      "expected_intent": "attendance",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 3355
+    },
+    {
+      "id": "reg_0343",
+      "query": "I need help: where can I check my class attendance from my dashboard? Can you guide me?",
+      "expected_intent": "attendance",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 3315
+    },
+    {
+      "id": "reg_0344",
+      "query": "I need help: where can I check my class attendance while using the mobile app? Please advise.",
+      "expected_intent": "attendance",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 515
+    },
+    {
+      "id": "reg_0345",
+      "query": "I have a problem: where can I check my class attendance from my dashboard? Could you help?",
+      "expected_intent": "attendance",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 315
+    },
+    {
+      "id": "reg_0346",
+      "query": "Hello, can I make up for a missed class? Could you help?",
+      "expected_intent": "attendance",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 2075
+    },
+    {
+      "id": "reg_0347",
+      "query": "Hello, my attendance was marked incorrectly for my enrolled course. Please let me know what I should do.",
+      "expected_intent": "attendance",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 4735
+    },
+    {
+      "id": "reg_0348",
+      "query": "Please help me with this issue: my attendance was marked incorrectly for my enrolled course. Please advise.",
+      "expected_intent": "attendance",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 1735
+    },
+    {
+      "id": "reg_0349",
+      "query": "I have a problem: how is attendance calculated? Could you help?",
+      "expected_intent": "attendance",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 4095
+    },
+    {
+      "id": "reg_0350",
+      "query": "Could you help me with this: where can I check my class attendance while using the web portal?",
+      "expected_intent": "attendance",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 4415
+    },
+    {
+      "id": "reg_0351",
+      "query": "Hello, how can I cancel my subscription while using the mobile app? Please advise.",
+      "expected_intent": "subscription",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 556
+    },
+    {
+      "id": "reg_0352",
+      "query": "Hi, can I change my subscription plan after making the payment? Could you help?",
+      "expected_intent": "subscription",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 1276
+    },
+    {
+      "id": "reg_0353",
+      "query": "Hi, why was my subscription renewed since yesterday? Please let me know what I should do.",
+      "expected_intent": "subscription",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 996
+    },
+    {
+      "id": "reg_0354",
+      "query": "Hello, can I change my subscription plan since yesterday? Please advise.",
+      "expected_intent": "subscription",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 976
+    },
+    {
+      "id": "reg_0355",
+      "query": "Could you help me with this: how can I cancel my subscription for my enrolled course? What should I do?",
+      "expected_intent": "subscription",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 2756
+    },
+    {
+      "id": "reg_0356",
+      "query": "I have a problem: why was my subscription renewed after making the payment? What should I do?",
+      "expected_intent": "subscription",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 2296
+    },
+    {
+      "id": "reg_0357",
+      "query": "Hi, how can I check my subscription for my enrolled course?",
+      "expected_intent": "subscription",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 716
+    },
+    {
+      "id": "reg_0358",
+      "query": "Please help me with this issue: can I change my subscription plan after I enrolled? Please let me know what I should do.",
+      "expected_intent": "subscription",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 2176
+    },
+    {
+      "id": "reg_0359",
+      "query": "Could you help me with this: when does my subscription expire since yesterday? Please advise.",
+      "expected_intent": "subscription",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 936
+    },
+    {
+      "id": "reg_0360",
+      "query": "Can you help me: when does my subscription expire while using the web portal?",
+      "expected_intent": "subscription",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 1436
+    },
+    {
+      "id": "reg_0361",
+      "query": "Hello, can I change my subscription plan from my dashboard? What should I do?",
+      "expected_intent": "subscription",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 2376
+    },
+    {
+      "id": "reg_0362",
+      "query": "Please help me with this issue: can I change my subscription plan since yesterday? Could you help?",
+      "expected_intent": "subscription",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 4976
+    },
+    {
+      "id": "reg_0363",
+      "query": "Hello, can I change my subscription plan while using the web portal? What should I do?",
+      "expected_intent": "subscription",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 4476
+    },
+    {
+      "id": "reg_0364",
+      "query": "I need help: when does my subscription expire for my enrolled course? Please let me know what I should do.",
+      "expected_intent": "subscription",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 4736
+    },
+    {
+      "id": "reg_0365",
+      "query": "I need help: why was my subscription renewed from my dashboard? Could you help?",
+      "expected_intent": "subscription",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 396
+    },
+    {
+      "id": "reg_0366",
+      "query": "Can you help me: can I change my subscription plan after making the payment?",
+      "expected_intent": "subscription",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 2276
+    },
+    {
+      "id": "reg_0367",
+      "query": "Please help me with this issue: when does my subscription expire after I enrolled? Could you help?",
+      "expected_intent": "subscription",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 4136
+    },
+    {
+      "id": "reg_0368",
+      "query": "Please help me with this issue: how can I check my subscription while using the web portal?",
+      "expected_intent": "subscription",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 4416
+    },
+    {
+      "id": "reg_0369",
+      "query": "I have a problem: why was my subscription renewed from my dashboard? What should I do?",
+      "expected_intent": "subscription",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 4396
+    },
+    {
+      "id": "reg_0370",
+      "query": "Hi, how can I check my subscription after today's class?",
+      "expected_intent": "subscription",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 2816
+    },
+    {
+      "id": "reg_0371",
+      "query": "Could you help me with this: how can I check my subscription while using the mobile app? Please advise.",
+      "expected_intent": "subscription",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 516
+    },
+    {
+      "id": "reg_0372",
+      "query": "I need help: how can I cancel my subscription after making the payment?",
+      "expected_intent": "subscription",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 256
+    },
+    {
+      "id": "reg_0373",
+      "query": "I need help: when does my subscription expire from my dashboard? Could you help?",
+      "expected_intent": "subscription",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 3336
+    },
+    {
+      "id": "reg_0374",
+      "query": "I need help: can I change my subscription plan for my enrolled course?",
+      "expected_intent": "subscription",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 2776
+    },
+    {
+      "id": "reg_0375",
+      "query": "Could you help me with this: why was my subscription renewed after making the payment? Please advise.",
+      "expected_intent": "subscription",
+      "expected_route": "operations",
+      "user_type": "student",
+      "source_row": 4296
+    },
+    {
+      "id": "reg_0376",
+      "query": "I have a problem: i am stuck on a problem from my course today. Please let me know what I should do.",
+      "expected_intent": "academic_question",
+      "expected_route": "learning",
+      "user_type": "student",
+      "source_row": 77
+    },
+    {
+      "id": "reg_0377",
+      "query": "I have a problem: i am stuck on a problem from my course since yesterday. Could you help?",
+      "expected_intent": "academic_question",
+      "expected_route": "learning",
+      "user_type": "student",
+      "source_row": 4977
+    },
+    {
+      "id": "reg_0378",
+      "query": "Can you help me: i am stuck on a problem from my course while using the web portal. Please advise.",
+      "expected_intent": "academic_question",
+      "expected_route": "learning",
+      "user_type": "student",
+      "source_row": 477
+    },
+    {
+      "id": "reg_0379",
+      "query": "I need help: can you explain this topic with a simple example for my enrolled course? Please advise.",
+      "expected_intent": "academic_question",
+      "expected_route": "learning",
+      "user_type": "student",
+      "source_row": 4757
+    },
+    {
+      "id": "reg_0380",
+      "query": "I have a problem: can you explain this topic with a simple example after today's class? Please let me know what I should do.",
+      "expected_intent": "academic_question",
+      "expected_route": "learning",
+      "user_type": "student",
+      "source_row": 3857
+    },
+    {
+      "id": "reg_0381",
+      "query": "Hello, can you explain this topic with a simple example from my dashboard? Please let me know what I should do.",
+      "expected_intent": "academic_question",
+      "expected_route": "learning",
+      "user_type": "student",
+      "source_row": 4357
+    },
+    {
+      "id": "reg_0382",
+      "query": "Please help me with this issue: can you explain a difficult concept from my course after making the payment? Can you guide me?",
+      "expected_intent": "academic_question",
+      "expected_route": "learning",
+      "user_type": "student",
+      "source_row": 1217
+    },
+    {
+      "id": "reg_0383",
+      "query": "Hello, can you explain this topic with a simple example after today's class? Could you help?",
+      "expected_intent": "academic_question",
+      "expected_route": "learning",
+      "user_type": "student",
+      "source_row": 857
+    },
+    {
+      "id": "reg_0384",
+      "query": "I need help: can you give me a hint for this academic question? Can you guide me?",
+      "expected_intent": "academic_question",
+      "expected_route": "learning",
+      "user_type": "student",
+      "source_row": 2097
+    },
+    {
+      "id": "reg_0385",
+      "query": "Could you help me with this: can you give me a hint for this academic question while using the web portal? Could you help?",
+      "expected_intent": "academic_question",
+      "expected_route": "learning",
+      "user_type": "student",
+      "source_row": 2497
+    },
+    {
+      "id": "reg_0386",
+      "query": "Please help me with this issue: i am stuck on a problem from my course while using the web portal on the course page. Can you guide me?",
+      "expected_intent": "academic_question",
+      "expected_route": "learning",
+      "user_type": "student",
+      "source_row": 2477
+    },
+    {
+      "id": "reg_0387",
+      "query": "Could you help me with this: can you give me a hint for this academic question?",
+      "expected_intent": "academic_question",
+      "expected_route": "learning",
+      "user_type": "student",
+      "source_row": 1097
+    },
+    {
+      "id": "reg_0388",
+      "query": "Please help me with this issue: i need help understanding today's lesson while using the web portal. What should I do?",
+      "expected_intent": "academic_question",
+      "expected_route": "learning",
+      "user_type": "student",
+      "source_row": 4437
+    },
+    {
+      "id": "reg_0389",
+      "query": "Please help me with this issue: can you explain this topic with a simple example? Can you guide me?",
+      "expected_intent": "academic_question",
+      "expected_route": "learning",
+      "user_type": "student",
+      "source_row": 2057
+    },
+    {
+      "id": "reg_0390",
+      "query": "Hello, i need help understanding today's lesson for my current course right now. Could you help?",
+      "expected_intent": "academic_question",
+      "expected_route": "learning",
+      "user_type": "student",
+      "source_row": 4637
+    },
+    {
+      "id": "reg_0391",
+      "query": "Hi, can you explain a difficult concept from my course from my dashboard? What should I do?",
+      "expected_intent": "academic_question",
+      "expected_route": "learning",
+      "user_type": "student",
+      "source_row": 317
+    },
+    {
+      "id": "reg_0392",
+      "query": "Please help me with this issue: can you explain this topic with a simple example after today's class? What should I do?",
+      "expected_intent": "academic_question",
+      "expected_route": "learning",
+      "user_type": "student",
+      "source_row": 4857
+    },
+    {
+      "id": "reg_0393",
+      "query": "I need help: can you explain this topic with a simple example since yesterday? What should I do?",
+      "expected_intent": "academic_question",
+      "expected_route": "learning",
+      "user_type": "student",
+      "source_row": 1957
+    },
+    {
+      "id": "reg_0394",
+      "query": "Hello, can you explain a difficult concept from my course? Could you help?",
+      "expected_intent": "academic_question",
+      "expected_route": "learning",
+      "user_type": "student",
+      "source_row": 17
+    },
+    {
+      "id": "reg_0395",
+      "query": "Hi, can you give me a hint for this academic question since yesterday? What should I do?",
+      "expected_intent": "academic_question",
+      "expected_route": "learning",
+      "user_type": "student",
+      "source_row": 1997
+    },
+    {
+      "id": "reg_0396",
+      "query": "Please help me with this issue: can you explain this topic with a simple example from my dashboard? Please advise.",
+      "expected_intent": "academic_question",
+      "expected_route": "learning",
+      "user_type": "student",
+      "source_row": 1357
+    },
+    {
+      "id": "reg_0397",
+      "query": "Please help me with this issue: can you explain a difficult concept from my course? What should I do?",
+      "expected_intent": "academic_question",
+      "expected_route": "learning",
+      "user_type": "student",
+      "source_row": 4017
+    },
+    {
+      "id": "reg_0398",
+      "query": "Please help me with this issue: i am stuck on a problem from my course while using the mobile app on the course page. Can you guide me?",
+      "expected_intent": "academic_question",
+      "expected_route": "learning",
+      "user_type": "student",
+      "source_row": 4577
+    },
+    {
+      "id": "reg_0399",
+      "query": "Please help me with this issue: i need help understanding today's lesson from my dashboard. What should I do?",
+      "expected_intent": "academic_question",
+      "expected_route": "learning",
+      "user_type": "student",
+      "source_row": 2337
+    },
+    {
+      "id": "reg_0400",
+      "query": "I have a problem: i am stuck on a problem from my course while using the web portal.",
+      "expected_intent": "academic_question",
+      "expected_route": "learning",
+      "user_type": "student",
+      "source_row": 1477
+    },
+    {
+      "id": "reg_0401",
+      "query": "Can you help me: where can I find the practice material after I enrolled? Please let me know what I should do.",
+      "expected_intent": "course_content",
+      "expected_route": "knowledge",
+      "user_type": "student",
+      "source_row": 2178
+    },
+    {
+      "id": "reg_0402",
+      "query": "Can you help me: where can I find the practice material while using the mobile app?",
+      "expected_intent": "course_content",
+      "expected_route": "knowledge",
+      "user_type": "student",
+      "source_row": 3578
+    },
+    {
+      "id": "reg_0403",
+      "query": "I need help: where can I find the lesson materials since yesterday?",
+      "expected_intent": "course_content",
+      "expected_route": "knowledge",
+      "user_type": "student",
+      "source_row": 4918
+    },
+    {
+      "id": "reg_0404",
+      "query": "Please help me with this issue: the notes for my lesson are missing for my enrolled course after enrolling. Could you help?",
+      "expected_intent": "course_content",
+      "expected_route": "knowledge",
+      "user_type": "student",
+      "source_row": 3758
+    },
+    {
+      "id": "reg_0405",
+      "query": "I have a problem: where can I find the lesson materials? What should I do?",
+      "expected_intent": "course_content",
+      "expected_route": "knowledge",
+      "user_type": "student",
+      "source_row": 4018
+    },
+    {
+      "id": "reg_0406",
+      "query": "Hi, the notes for my lesson are missing after today's class on the course page.",
+      "expected_intent": "course_content",
+      "expected_route": "knowledge",
+      "user_type": "student",
+      "source_row": 2858
+    },
+    {
+      "id": "reg_0407",
+      "query": "Hello, does this course provide downloadable resources from my dashboard? Can you guide me?",
+      "expected_intent": "course_content",
+      "expected_route": "knowledge",
+      "user_type": "student",
+      "source_row": 3398
+    },
+    {
+      "id": "reg_0408",
+      "query": "Hello, where can I find the practice material for my current course? What should I do?",
+      "expected_intent": "course_content",
+      "expected_route": "knowledge",
+      "user_type": "student",
+      "source_row": 3678
+    },
+    {
+      "id": "reg_0409",
+      "query": "Please help me with this issue: does this course provide downloadable resources while using the web portal? Could you help?",
+      "expected_intent": "course_content",
+      "expected_route": "knowledge",
+      "user_type": "student",
+      "source_row": 2498
+    },
+    {
+      "id": "reg_0410",
+      "query": "I have a problem: does this course provide downloadable resources for my enrolled course? Can you guide me?",
+      "expected_intent": "course_content",
+      "expected_route": "knowledge",
+      "user_type": "student",
+      "source_row": 798
+    },
+    {
+      "id": "reg_0411",
+      "query": "Could you help me with this: where can I find the practice material since yesterday? Please advise.",
+      "expected_intent": "course_content",
+      "expected_route": "knowledge",
+      "user_type": "student",
+      "source_row": 978
+    },
+    {
+      "id": "reg_0412",
+      "query": "Please help me with this issue: where can I find the lesson materials while using the mobile app?",
+      "expected_intent": "course_content",
+      "expected_route": "knowledge",
+      "user_type": "student",
+      "source_row": 1518
+    },
+    {
+      "id": "reg_0413",
+      "query": "Could you help me with this: where can I find the lesson materials after I enrolled? What should I do?",
+      "expected_intent": "course_content",
+      "expected_route": "knowledge",
+      "user_type": "student",
+      "source_row": 1118
+    },
+    {
+      "id": "reg_0414",
+      "query": "I need help: does this course provide downloadable resources after making the payment?",
+      "expected_intent": "course_content",
+      "expected_route": "knowledge",
+      "user_type": "student",
+      "source_row": 298
+    },
+    {
+      "id": "reg_0415",
+      "query": "Hello, where can I find the practice material since yesterday? Can you guide me?",
+      "expected_intent": "course_content",
+      "expected_route": "knowledge",
+      "user_type": "student",
+      "source_row": 2978
+    },
+    {
+      "id": "reg_0416",
+      "query": "Could you help me with this: where can I find the practice material for my enrolled course? Can you guide me?",
+      "expected_intent": "course_content",
+      "expected_route": "knowledge",
+      "user_type": "student",
+      "source_row": 3778
+    },
+    {
+      "id": "reg_0417",
+      "query": "Please help me with this issue: where can I find the practice material for my enrolled course?",
+      "expected_intent": "course_content",
+      "expected_route": "knowledge",
+      "user_type": "student",
+      "source_row": 2778
+    },
+    {
+      "id": "reg_0418",
+      "query": "Hello, where can I find the lesson materials from my dashboard? What should I do?",
+      "expected_intent": "course_content",
+      "expected_route": "knowledge",
+      "user_type": "student",
+      "source_row": 318
+    },
+    {
+      "id": "reg_0419",
+      "query": "Hi, can I download the course resources after today's class? Could you help?",
+      "expected_intent": "course_content",
+      "expected_route": "knowledge",
+      "user_type": "student",
+      "source_row": 3838
+    },
+    {
+      "id": "reg_0420",
+      "query": "Can you help me: where can I find the lesson materials for my current course? Could you help?",
+      "expected_intent": "course_content",
+      "expected_route": "knowledge",
+      "user_type": "student",
+      "source_row": 1618
+    },
+    {
+      "id": "reg_0421",
+      "query": "Please help me with this issue: can I download the course resources for my enrolled course? Please let me know what I should do.",
+      "expected_intent": "course_content",
+      "expected_route": "knowledge",
+      "user_type": "student",
+      "source_row": 4738
+    },
+    {
+      "id": "reg_0422",
+      "query": "Please help me with this issue: the notes for my lesson are missing after making the payment.",
+      "expected_intent": "course_content",
+      "expected_route": "knowledge",
+      "user_type": "student",
+      "source_row": 258
+    },
+    {
+      "id": "reg_0423",
+      "query": "Hi, does this course provide downloadable resources since yesterday? Could you help?",
+      "expected_intent": "course_content",
+      "expected_route": "knowledge",
+      "user_type": "student",
+      "source_row": 2998
+    },
+    {
+      "id": "reg_0424",
+      "query": "Can you help me: the notes for my lesson are missing while using the web portal. Could you help?",
+      "expected_intent": "course_content",
+      "expected_route": "knowledge",
+      "user_type": "student",
+      "source_row": 2458
+    },
+    {
+      "id": "reg_0425",
+      "query": "Hi, where can I find the practice material while using the mobile app? Could you help?",
+      "expected_intent": "course_content",
+      "expected_route": "knowledge",
+      "user_type": "student",
+      "source_row": 2578
+    },
+    {
+      "id": "reg_0426",
+      "query": "Can you help me: i want to submit feedback about my course for my enrolled course. Please advise.",
+      "expected_intent": "feedback_complaint",
+      "expected_route": "escalation",
+      "user_type": "student",
+      "source_row": 4719
+    },
+    {
+      "id": "reg_0427",
+      "query": "I need help: i am unhappy with the support I received from my dashboard after logging in. Please advise.",
+      "expected_intent": "feedback_complaint",
+      "expected_route": "escalation",
+      "user_type": "student",
+      "source_row": 4379
+    },
+    {
+      "id": "reg_0428",
+      "query": "Hello, i want to submit feedback about my course for my enrolled course. Please let me know what I should do.",
+      "expected_intent": "feedback_complaint",
+      "expected_route": "escalation",
+      "user_type": "student",
+      "source_row": 2719
+    },
+    {
+      "id": "reg_0429",
+      "query": "I have a problem: i want to submit feedback about my course after today's class. Could you help?",
+      "expected_intent": "feedback_complaint",
+      "expected_route": "escalation",
+      "user_type": "student",
+      "source_row": 819
+    },
+    {
+      "id": "reg_0430",
+      "query": "Could you help me with this: where can I submit a student complaint after making the payment?",
+      "expected_intent": "feedback_complaint",
+      "expected_route": "escalation",
+      "user_type": "student",
+      "source_row": 299
+    },
+    {
+      "id": "reg_0431",
+      "query": "Can you help me: i want to submit feedback about my course for my current course. Please advise.",
+      "expected_intent": "feedback_complaint",
+      "expected_route": "escalation",
+      "user_type": "student",
+      "source_row": 2619
+    },
+    {
+      "id": "reg_0432",
+      "query": "Please help me with this issue: i want to submit feedback about my course while using the web portal after enrolling. Can you guide me?",
+      "expected_intent": "feedback_complaint",
+      "expected_route": "escalation",
+      "user_type": "student",
+      "source_row": 419
+    },
+    {
+      "id": "reg_0433",
+      "query": "Could you help me with this: how can I report a problem with my course from my dashboard? Please let me know what I should do.",
+      "expected_intent": "feedback_complaint",
+      "expected_route": "escalation",
+      "user_type": "student",
+      "source_row": 4359
+    },
+    {
+      "id": "reg_0434",
+      "query": "I have a problem: how can I report a problem with my course since yesterday? Please let me know what I should do.",
+      "expected_intent": "feedback_complaint",
+      "expected_route": "escalation",
+      "user_type": "student",
+      "source_row": 959
+    },
+    {
+      "id": "reg_0435",
+      "query": "Hi, how can I report a problem with my course from my dashboard? What should I do?",
+      "expected_intent": "feedback_complaint",
+      "expected_route": "escalation",
+      "user_type": "student",
+      "source_row": 359
+    },
+    {
+      "id": "reg_0436",
+      "query": "I have a problem: how can I report a problem with my course? Please let me know what I should do.",
+      "expected_intent": "feedback_complaint",
+      "expected_route": "escalation",
+      "user_type": "student",
+      "source_row": 3059
+    },
+    {
+      "id": "reg_0437",
+      "query": "Hello, i want to submit feedback about my course after today's class. Please let me know what I should do.",
+      "expected_intent": "feedback_complaint",
+      "expected_route": "escalation",
+      "user_type": "student",
+      "source_row": 4819
+    },
+    {
+      "id": "reg_0438",
+      "query": "Can you help me: how can I report a problem with my course while using the web portal? Please advise.",
+      "expected_intent": "feedback_complaint",
+      "expected_route": "escalation",
+      "user_type": "student",
+      "source_row": 3459
+    },
+    {
+      "id": "reg_0439",
+      "query": "Hi, i want to submit feedback about my course while using the web portal. Please advise.",
+      "expected_intent": "feedback_complaint",
+      "expected_route": "escalation",
+      "user_type": "student",
+      "source_row": 4419
+    },
+    {
+      "id": "reg_0440",
+      "query": "Can you help me: i want to submit feedback about my course after making the payment. Can you guide me?",
+      "expected_intent": "feedback_complaint",
+      "expected_route": "escalation",
+      "user_type": "student",
+      "source_row": 1219
+    },
+    {
+      "id": "reg_0441",
+      "query": "I have a problem: i am unhappy with the support I received. Could you help?",
+      "expected_intent": "feedback_complaint",
+      "expected_route": "escalation",
+      "user_type": "student",
+      "source_row": 2079
+    },
+    {
+      "id": "reg_0442",
+      "query": "Hello, i want to submit feedback about my course for my current course. Please let me know what I should do.",
+      "expected_intent": "feedback_complaint",
+      "expected_route": "escalation",
+      "user_type": "student",
+      "source_row": 619
+    },
+    {
+      "id": "reg_0443",
+      "query": "Hi, how can I report a problem with my course while using the mobile app? What should I do?",
+      "expected_intent": "feedback_complaint",
+      "expected_route": "escalation",
+      "user_type": "student",
+      "source_row": 4559
+    },
+    {
+      "id": "reg_0444",
+      "query": "I have a problem: i want to submit feedback about my course since yesterday. Could you help?",
+      "expected_intent": "feedback_complaint",
+      "expected_route": "escalation",
+      "user_type": "student",
+      "source_row": 2919
+    },
+    {
+      "id": "reg_0445",
+      "query": "Could you help me with this: i am unhappy with the support I received after making the payment. Could you help?",
+      "expected_intent": "feedback_complaint",
+      "expected_route": "escalation",
+      "user_type": "student",
+      "source_row": 1279
+    },
+    {
+      "id": "reg_0446",
+      "query": "I need help: i am unhappy with the support I received since yesterday. Can you guide me?",
+      "expected_intent": "feedback_complaint",
+      "expected_route": "escalation",
+      "user_type": "student",
+      "source_row": 2979
+    },
+    {
+      "id": "reg_0447",
+      "query": "I need help: where can I submit a student complaint for my enrolled course? Please advise.",
+      "expected_intent": "feedback_complaint",
+      "expected_route": "escalation",
+      "user_type": "student",
+      "source_row": 4799
+    },
+    {
+      "id": "reg_0448",
+      "query": "Hi, i want to submit feedback about my course after making the payment. Please advise.",
+      "expected_intent": "feedback_complaint",
+      "expected_route": "escalation",
+      "user_type": "student",
+      "source_row": 219
+    },
+    {
+      "id": "reg_0449",
+      "query": "Can you help me: i am unhappy with the support I received after I enrolled from my student account. What should I do?",
+      "expected_intent": "feedback_complaint",
+      "expected_route": "escalation",
+      "user_type": "student",
+      "source_row": 3179
+    },
+    {
+      "id": "reg_0450",
+      "query": "I have a problem: i am unhappy with the support I received after today's class.",
+      "expected_intent": "feedback_complaint",
+      "expected_route": "escalation",
+      "user_type": "student",
+      "source_row": 4879
+    },
+    {
+      "id": "reg_0451",
+      "query": "I need help: i need help from a support representative after I enrolled. Could you help?",
+      "expected_intent": "human_support",
+      "expected_route": "escalation",
+      "user_type": "student",
+      "source_row": 2160
+    },
+    {
+      "id": "reg_0452",
+      "query": "Please help me with this issue: please transfer my issue to a human from my dashboard right now. Could you help?",
+      "expected_intent": "human_support",
+      "expected_route": "escalation",
+      "user_type": "student",
+      "source_row": 3380
+    },
+    {
+      "id": "reg_0453",
+      "query": "I need help: i need someone from the support team to review my case since yesterday. Could you help?",
+      "expected_intent": "human_support",
+      "expected_route": "escalation",
+      "user_type": "student",
+      "source_row": 3000
+    },
+    {
+      "id": "reg_0454",
+      "query": "Hi, i need someone from the support team to review my case after today's class after enrolling.",
+      "expected_intent": "human_support",
+      "expected_route": "escalation",
+      "user_type": "student",
+      "source_row": 2900
+    },
+    {
+      "id": "reg_0455",
+      "query": "Please help me with this issue: please transfer my issue to a human for my current course. Please let me know what I should do.",
+      "expected_intent": "human_support",
+      "expected_route": "escalation",
+      "user_type": "student",
+      "source_row": 2680
+    },
+    {
+      "id": "reg_0456",
+      "query": "Hello, i want to speak with a human support agent for my current course. What should I do?",
+      "expected_intent": "human_support",
+      "expected_route": "escalation",
+      "user_type": "student",
+      "source_row": 1620
+    },
+    {
+      "id": "reg_0457",
+      "query": "Could you help me with this: i need someone from the support team to review my case for my enrolled course. Please advise.",
+      "expected_intent": "human_support",
+      "expected_route": "escalation",
+      "user_type": "student",
+      "source_row": 4800
+    },
+    {
+      "id": "reg_0458",
+      "query": "Hello, can you connect me with customer support from my dashboard? Can you guide me?",
+      "expected_intent": "human_support",
+      "expected_route": "escalation",
+      "user_type": "student",
+      "source_row": 1340
+    },
+    {
+      "id": "reg_0459",
+      "query": "Hello, i need help from a support representative. Please advise.",
+      "expected_intent": "human_support",
+      "expected_route": "escalation",
+      "user_type": "student",
+      "source_row": 1060
+    },
+    {
+      "id": "reg_0460",
+      "query": "Hello, can you connect me with customer support while using the web portal? Can you guide me?",
+      "expected_intent": "human_support",
+      "expected_route": "escalation",
+      "user_type": "student",
+      "source_row": 3440
+    },
+    {
+      "id": "reg_0461",
+      "query": "Could you help me with this: please transfer my issue to a human for my current course in the mobile app. What should I do?",
+      "expected_intent": "human_support",
+      "expected_route": "escalation",
+      "user_type": "student",
+      "source_row": 3680
+    },
+    {
+      "id": "reg_0462",
+      "query": "I have a problem: i need someone from the support team to review my case after today's class. What should I do?",
+      "expected_intent": "human_support",
+      "expected_route": "escalation",
+      "user_type": "student",
+      "source_row": 4900
+    },
+    {
+      "id": "reg_0463",
+      "query": "Can you help me: can you connect me with customer support after making the payment? Could you help?",
+      "expected_intent": "human_support",
+      "expected_route": "escalation",
+      "user_type": "student",
+      "source_row": 1240
+    },
+    {
+      "id": "reg_0464",
+      "query": "Hi, i need help from a support representative from my dashboard. Could you help?",
+      "expected_intent": "human_support",
+      "expected_route": "escalation",
+      "user_type": "student",
+      "source_row": 1360
+    },
+    {
+      "id": "reg_0465",
+      "query": "Hello, can you connect me with customer support? What should I do?",
+      "expected_intent": "human_support",
+      "expected_route": "escalation",
+      "user_type": "student",
+      "source_row": 2040
+    },
+    {
+      "id": "reg_0466",
+      "query": "Can you help me: please transfer my issue to a human for my current course on the learning portal.",
+      "expected_intent": "human_support",
+      "expected_route": "escalation",
+      "user_type": "student",
+      "source_row": 680
+    },
+    {
+      "id": "reg_0467",
+      "query": "I need help: i want to speak with a human support agent after today's class after logging in. Please let me know what I should do.",
+      "expected_intent": "human_support",
+      "expected_route": "escalation",
+      "user_type": "student",
+      "source_row": 4820
+    },
+    {
+      "id": "reg_0468",
+      "query": "Hi, i want to speak with a human support agent from my dashboard after enrolling.",
+      "expected_intent": "human_support",
+      "expected_route": "escalation",
+      "user_type": "student",
+      "source_row": 3320
+    },
+    {
+      "id": "reg_0469",
+      "query": "I have a problem: can you connect me with customer support while using the mobile app? What should I do?",
+      "expected_intent": "human_support",
+      "expected_route": "escalation",
+      "user_type": "student",
+      "source_row": 1540
+    },
+    {
+      "id": "reg_0470",
+      "query": "Can you help me: i need help from a support representative from my dashboard on the learning portal.",
+      "expected_intent": "human_support",
+      "expected_route": "escalation",
+      "user_type": "student",
+      "source_row": 2360
+    },
+    {
+      "id": "reg_0471",
+      "query": "Please help me with this issue: please transfer my issue to a human for my enrolled course. Please let me know what I should do.",
+      "expected_intent": "human_support",
+      "expected_route": "escalation",
+      "user_type": "student",
+      "source_row": 4780
+    },
+    {
+      "id": "reg_0472",
+      "query": "Hello, i need help from a support representative after today's class today. Can you guide me?",
+      "expected_intent": "human_support",
+      "expected_route": "escalation",
+      "user_type": "student",
+      "source_row": 3860
+    },
+    {
+      "id": "reg_0473",
+      "query": "Hi, please transfer my issue to a human from my dashboard after enrolling.",
+      "expected_intent": "human_support",
+      "expected_route": "escalation",
+      "user_type": "student",
+      "source_row": 380
+    },
+    {
+      "id": "reg_0474",
+      "query": "I need help: i need help from a support representative. Could you help?",
+      "expected_intent": "human_support",
+      "expected_route": "escalation",
+      "user_type": "student",
+      "source_row": 60
+    },
+    {
+      "id": "reg_0475",
+      "query": "I have a problem: i want to speak with a human support agent for my current course. Can you guide me?",
+      "expected_intent": "human_support",
+      "expected_route": "escalation",
+      "user_type": "student",
+      "source_row": 4620
+    },
+    {
+      "id": "reg_0476",
+      "query": "Hi, i need assistance with something outside the available course services after I enrolled. Please advise.",
+      "expected_intent": "unknown",
+      "expected_route": "knowledge",
+      "user_type": "student",
+      "source_row": 3201
+    },
+    {
+      "id": "reg_0477",
+      "query": "Hello, i need assistance with something outside the available course services after today's class.",
+      "expected_intent": "unknown",
+      "expected_route": "knowledge",
+      "user_type": "student",
+      "source_row": 2901
+    },
+    {
+      "id": "reg_0478",
+      "query": "Hello, can you help me with something that is not related to my course while using the mobile app? Could you help?",
+      "expected_intent": "unknown",
+      "expected_route": "knowledge",
+      "user_type": "student",
+      "source_row": 521
+    },
+    {
+      "id": "reg_0479",
+      "query": "Hello, can you help me with a different issue from my dashboard?",
+      "expected_intent": "unknown",
+      "expected_route": "knowledge",
+      "user_type": "student",
+      "source_row": 381
+    },
+    {
+      "id": "reg_0480",
+      "query": "Hello, i am not sure which support category my problem belongs to for my enrolled course. Please let me know what I should do.",
+      "expected_intent": "unknown",
+      "expected_route": "knowledge",
+      "user_type": "student",
+      "source_row": 2761
+    },
+    {
+      "id": "reg_0481",
+      "query": "Hi, i need assistance with something outside the available course services. Please advise.",
+      "expected_intent": "unknown",
+      "expected_route": "knowledge",
+      "user_type": "student",
+      "source_row": 1101
+    },
+    {
+      "id": "reg_0482",
+      "query": "I need help: i need assistance with something outside the available course services while using the mobile app. Can you guide me?",
+      "expected_intent": "unknown",
+      "expected_route": "knowledge",
+      "user_type": "student",
+      "source_row": 2601
+    },
+    {
+      "id": "reg_0483",
+      "query": "Hello, i am not sure which support category my problem belongs to from my dashboard at the moment. Could you help?",
+      "expected_intent": "unknown",
+      "expected_route": "knowledge",
+      "user_type": "student",
+      "source_row": 1361
+    },
+    {
+      "id": "reg_0484",
+      "query": "Hi, can you help me with a different issue for my current course? Please advise.",
+      "expected_intent": "unknown",
+      "expected_route": "knowledge",
+      "user_type": "student",
+      "source_row": 681
+    },
+    {
+      "id": "reg_0485",
+      "query": "I have a problem: can you help me with a different issue for my enrolled course? Please let me know what I should do.",
+      "expected_intent": "unknown",
+      "expected_route": "knowledge",
+      "user_type": "student",
+      "source_row": 4781
+    },
+    {
+      "id": "reg_0486",
+      "query": "Hi, i need assistance with something outside the available course services for my enrolled course. Can you guide me?",
+      "expected_intent": "unknown",
+      "expected_route": "knowledge",
+      "user_type": "student",
+      "source_row": 1801
+    },
+    {
+      "id": "reg_0487",
+      "query": "Please help me with this issue: can you help me with something that is not related to my course while using the mobile app? What should I do?",
+      "expected_intent": "unknown",
+      "expected_route": "knowledge",
+      "user_type": "student",
+      "source_row": 4521
+    },
+    {
+      "id": "reg_0488",
+      "query": "I need help: i am not sure which support category my problem belongs to from my dashboard. What should I do?",
+      "expected_intent": "unknown",
+      "expected_route": "knowledge",
+      "user_type": "student",
+      "source_row": 361
+    },
+    {
+      "id": "reg_0489",
+      "query": "Could you help me with this: can you help me with something that is not related to my course after today's class? Please let me know what I should do.",
+      "expected_intent": "unknown",
+      "expected_route": "knowledge",
+      "user_type": "student",
+      "source_row": 4821
+    },
+    {
+      "id": "reg_0490",
+      "query": "Can you help me: i am not sure which support category my problem belongs to after making the payment. Can you guide me?",
+      "expected_intent": "unknown",
+      "expected_route": "knowledge",
+      "user_type": "student",
+      "source_row": 1261
+    },
+    {
+      "id": "reg_0491",
+      "query": "I need help: i need assistance with something outside the available course services after today's class from my student account. Please advise.",
+      "expected_intent": "unknown",
+      "expected_route": "knowledge",
+      "user_type": "student",
+      "source_row": 1901
+    },
+    {
+      "id": "reg_0492",
+      "query": "Could you help me with this: i am not sure which support category my problem belongs to while using the web portal. Please let me know what I should do.",
+      "expected_intent": "unknown",
+      "expected_route": "knowledge",
+      "user_type": "student",
+      "source_row": 1461
+    },
+    {
+      "id": "reg_0493",
+      "query": "Hi, can you help me with something that is not related to my course after today's class? What should I do?",
+      "expected_intent": "unknown",
+      "expected_route": "knowledge",
+      "user_type": "student",
+      "source_row": 821
+    },
+    {
+      "id": "reg_0494",
+      "query": "I have a problem: i am not sure which support category my problem belongs to after making the payment currently. Please let me know what I should do.",
+      "expected_intent": "unknown",
+      "expected_route": "knowledge",
+      "user_type": "student",
+      "source_row": 2261
+    },
+    {
+      "id": "reg_0495",
+      "query": "I need help: can you help me with a different issue after making the payment? Can you guide me?",
+      "expected_intent": "unknown",
+      "expected_route": "knowledge",
+      "user_type": "student",
+      "source_row": 4281
+    },
+    {
+      "id": "reg_0496",
+      "query": "Can you help me: i need assistance with something outside the available course services for my enrolled course on the learning portal. What should I do?",
+      "expected_intent": "unknown",
+      "expected_route": "knowledge",
+      "user_type": "student",
+      "source_row": 2801
+    },
+    {
+      "id": "reg_0497",
+      "query": "Hi, can you help me with something that is not related to my course for my current course? Please advise.",
+      "expected_intent": "unknown",
+      "expected_route": "knowledge",
+      "user_type": "student",
+      "source_row": 3621
+    },
+    {
+      "id": "reg_0498",
+      "query": "I have a problem: i am not sure which support category my problem belongs to while using the mobile app.",
+      "expected_intent": "unknown",
+      "expected_route": "knowledge",
+      "user_type": "student",
+      "source_row": 1561
+    },
+    {
+      "id": "reg_0499",
+      "query": "Could you help me with this: i have a question that does not fit the usual support options after I enrolled. Please let me know what I should do.",
+      "expected_intent": "unknown",
+      "expected_route": "knowledge",
+      "user_type": "student",
+      "source_row": 3141
+    },
+    {
+      "id": "reg_0500",
+      "query": "I need help: i have a question that does not fit the usual support options after I enrolled. What should I do?",
+      "expected_intent": "unknown",
+      "expected_route": "knowledge",
+      "user_type": "student",
+      "source_row": 4141
+    }
+  ]
+}

@@ -399,9 +399,125 @@ tests/
 
 ---
 
+## Phase 4 — Intent Router
+
+Classifies student queries into 20 intents and returns a validated routing decision. Uses Phase 3 Gemini client with `model="fast"`.
+
+MySQL and Qdrant are **not** required for this phase.
+
+### Public API
+
+```python
+from app.router import classify_query
+
+decision = classify_query(
+    query="I paid yesterday but course is not active",
+    user_type="student",       # optional
+    student_id="stu_A",        # optional
+    conversation_turn=1,       # optional
+)
+```
+
+### Step 1: Configure router settings
+
+Ensure `.env` includes:
+
+```env
+GEMINI_API_KEY=your_key_here
+ROUTER_DATASET_PATH=knowledge-base/Student-dataset.csv
+ROUTER_REGRESSION_PATH=data/evaluation/router_regression_500.json
+ROUTER_CONFIDENCE_THRESHOLD=0.70
+ROUTER_REGRESSION_PER_INTENT=25
+ROUTER_REGRESSION_SEED=42
+ROUTER_EVAL_REPORT_PATH=data/evaluation/router_eval_report.json
+```
+
+### Step 2: Run unit tests (mocked, no API key)
+
+```powershell
+python -m pytest tests/unit/test_router_schema.py tests/unit/test_router_rules.py tests/unit/test_router_metrics.py tests/unit/test_router_prompt.py -q
+```
+
+### Step 3: Build frozen regression set (once)
+
+```powershell
+python scripts/build_router_regression_set.py
+```
+
+Creates `data/evaluation/router_regression_500.json` with 25 cases per intent (500 total).
+
+### Step 4: Classify a single query (live, requires API key)
+
+```powershell
+python scripts/classify_query_demo.py --query "Can I get my money back after cancelling?" --user-type student
+```
+
+### Step 5: Evaluate router accuracy (live)
+
+Quick smoke:
+
+```powershell
+python scripts/evaluate_router.py --limit 50
+```
+
+Full regression (target >= 90% intent accuracy). On Gemini free tier, keep the default delay to avoid 429 rate limits:
+
+```powershell
+python scripts/evaluate_router.py
+```
+
+Use `--delay 0` only if your API plan supports higher throughput.
+
+Optional live pytest subset:
+
+```powershell
+python -m pytest -m live tests/router/test_router_regression.py
+```
+
+### Router output fields
+
+- `intent`, `sub_intent`, `route`
+- `requires_rag`, `requires_tool`, `requires_planning`, `escalation_candidate`
+- `confidence`, `is_unknown`, `raw_intent`
+- `model`, `latency_ms`, token counts
+
+Low confidence (`< ROUTER_CONFIDENCE_THRESHOLD`) or model `unknown` → `is_unknown=True`.
+
+---
+
+## Project structure (Phase 4)
+
+```text
+app/
+  router/
+    router.py
+    prompts.py
+    intents.py
+    postprocess.py
+  evaluation/
+    dataset_loader.py
+    metrics.py
+  schemas/
+    router.py
+    router_types.py
+data/evaluation/
+  router_regression_500.json
+scripts/
+  build_router_regression_set.py
+  evaluate_router.py
+  classify_query_demo.py
+tests/
+  unit/
+    test_router_*.py
+  router/
+    test_router_regression.py
+```
+
+---
+
 ## Next phases
 
-- Phase 4: Intent router
-- Phase 5+: Knowledge agent, operations agent, LangGraph orchestration
+- Phase 5: Knowledge agent
+- Phase 6+: Operations agent, LangGraph orchestration
 
 See `Skill/Students_plan.md` for the full build plan.

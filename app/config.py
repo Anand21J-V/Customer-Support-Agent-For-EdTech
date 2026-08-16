@@ -51,6 +51,15 @@ class Settings(BaseSettings):
     bm25_cache_path: str = "data/evaluation/bm25_corpus.json"
     ingest_manifest_path: str = "data/evaluation/ingest_manifest.json"
 
+    # Router (Phase 4)
+    router_dataset_path: str = "knowledge-base/Student-dataset.csv"
+    router_regression_path: str = "data/evaluation/router_regression_500.json"
+    router_confidence_threshold: float = 0.70
+    router_regression_per_intent: int = 25
+    router_regression_seed: int = 42
+    router_eval_report_path: str = "data/evaluation/router_eval_report.json"
+    router_eval_delay_seconds: float = 12.0
+
     # LangSmith
     langsmith_tracing: bool = False
     langsmith_api_key: str = ""

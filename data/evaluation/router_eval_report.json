@@ -1,0 +1,29 @@
+{
+  "evaluated_at": "2026-08-16T19:55:19.834589+00:00",
+  "regression_path": "data/evaluation/router_regression_500.json",
+  "cases_evaluated": 30,
+  "total": 30,
+  "intent_accuracy": 0.43333333333333335,
+  "route_accuracy": 0.4666666666666667,
+  "per_intent_accuracy": {
+    "course_access": 0.48,
+    "enrollment": 0.2
+  },
+  "confusion_pairs": [
+    {
+      "expected": "course_access",
+      "predicted": "unknown",
+      "count": 12
+    },
+    {
+      "expected": "enrollment",
+      "predicted": "unknown",
+      "count": 4
+    },
+    {
+      "expected": "course_access",
+      "predicted": "technical_issue",
+      "count": 1
+    }
+  ]
+}
