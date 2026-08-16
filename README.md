@@ -307,9 +307,101 @@ docker-compose.yml
 
 ---
 
+## Phase 3 — Gemini Integration
+
+This phase adds a **reusable Gemini client** for structured LLM output. MySQL and Qdrant are **not** required.
+
+Uses official **`google-genai`** SDK with:
+
+- config-driven models (`generation` / `fast` aliases)
+- HTTP timeouts and retries
+- parse retry for invalid JSON
+- Pydantic-validated structured output
+- typed errors and token logging
+
+Phase 2 local embeddings are unchanged.
+
+### Step 1: Set your API key
+
+Get a key from [Google AI Studio](https://aistudio.google.com/apikey) and add it to `.env`:
+
+```env
+GEMINI_API_KEY=your_key_here
+GEMINI_GENERATION_MODEL=gemini-3.6-flash
+GEMINI_FAST_MODEL=gemini-3.5-flash-lite
+GEMINI_TIMEOUT_MS=30000
+GEMINI_RETRY_ATTEMPTS=2
+GEMINI_PARSE_RETRIES=1
+```
+
+### Step 2: Install dependencies
+
+```powershell
+pip install -r requirements.txt
+```
+
+### Step 3: Run unit tests (mocked, no API key needed)
+
+```powershell
+pytest tests/unit/test_gemini_client.py -q
+```
+
+### Step 4: Live smoke test (requires API key)
+
+```powershell
+python scripts/test_gemini_client.py
+```
+
+Expected output includes validated fields such as:
+
+```text
+model: gemini-3.6-flash
+intent: refund
+confidence: 0.92
+summary: ...
+prompt_tokens: ...
+output_tokens: ...
+latency_ms: ...
+```
+
+### Library usage
+
+```python
+from app.llm import generate_structured
+from app.schemas.llm import DemoClassification
+
+result = generate_structured(
+    "Can I get my money back after cancelling?",
+    DemoClassification,
+    model="generation",
+)
+print(result.data.intent, result.data.confidence)
+```
+
+---
+
+## Project structure (Phase 3)
+
+```text
+app/
+  llm/
+    __init__.py
+    exceptions.py
+    gemini_client.py
+  schemas/
+    llm.py
+scripts/
+  test_gemini_client.py
+tests/
+  unit/
+    test_gemini_client.py
+```
+
+---
+
 ## Next phases
 
-- Phase 3: LLM client integration
-- Phase 4+: Intent router, agents, LangGraph orchestration
+- Phase 4: Intent router
+- Phase 5+: Knowledge agent, operations agent, LangGraph orchestration
 
 See `Skill/Students_plan.md` for the full build plan.
