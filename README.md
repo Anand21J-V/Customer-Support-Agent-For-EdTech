@@ -263,7 +263,8 @@ Phase 2 does not add new FastAPI endpoints. Existing `/health` behavior is uncha
 
 ### Troubleshooting
 
-- `Could not connect to Qdrant` → run `docker compose up qdrant -d`
+- **Docker Desktop must be running** before `docker compose up qdrant -d`
+- `Could not connect to Qdrant` → start Docker Desktop, then run `docker compose up qdrant -d`
 - `Qdrant collection is empty` → run `python scripts/ingest_knowledge.py`
 - Slow first run → sentence-transformers is downloading the model
 - Reset Qdrant data → `docker compose down` then remove the `qdrant_data` volume if needed

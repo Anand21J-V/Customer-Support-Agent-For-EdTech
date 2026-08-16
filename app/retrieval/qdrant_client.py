@@ -133,16 +133,16 @@ def vector_search(
     if not client.collection_exists(active_settings.qdrant_collection):
         return []
 
-    results = client.search(
+    response = client.query_points(
         collection_name=active_settings.qdrant_collection,
-        query_vector=query_vector,
+        query=query_vector,
         limit=top_k,
         query_filter=_build_filter(intent=intent),
         with_payload=True,
     )
 
     hits: list[dict[str, Any]] = []
-    for result in results:
+    for result in response.points:
         payload = dict(result.payload or {})
         payload["score"] = float(result.score or 0.0)
         payload["source"] = "vector"

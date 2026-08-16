@@ -1,0 +1,1542 @@
+[
+  {
+    "chunk_id": "POL-ACADEMIC_QUESTION-001::purpose::001",
+    "policy_id": "POL-ACADEMIC_QUESTION-001",
+    "intent": "academic_question",
+    "category": "Academic Support",
+    "audience": "student",
+    "status": "active",
+    "section": "purpose",
+    "text": "Policy: POL-ACADEMIC_QUESTION-001\nIntent: academic_question\nCategory: Academic Support\nSection: purpose\nContent: Academic questions, explanations, hints, and concept understanding.",
+    "keywords": [
+      "academic",
+      "question",
+      "academic support",
+      "student support"
+    ]
+  },
+  {
+    "chunk_id": "POL-ACADEMIC_QUESTION-001::core_rules::001",
+    "policy_id": "POL-ACADEMIC_QUESTION-001",
+    "intent": "academic_question",
+    "category": "Academic Support",
+    "audience": "student",
+    "status": "active",
+    "section": "core_rules",
+    "text": "Policy: POL-ACADEMIC_QUESTION-001\nIntent: academic_question\nCategory: Academic Support\nSection: core_rules\nContent: - The learning assistant should explain concepts clearly and help the student reason toward an answer.\n- For course-specific questions, prefer the current course content as grounding evidence.\n- For assessed work, provide explanations, hints, examples, and conceptual guidance without falsely claiming to complete restricted student work.\n- If the student's question is ambiguous, ask for the relevant course, module, or problem context before giving a highly specific answer.\n- Do not fabricate textbook references, course rules, grades, or instructor requirements.",
+    "keywords": [
+      "academic",
+      "question",
+      "academic support",
+      "student support"
+    ]
+  },
+  {
+    "chunk_id": "POL-ACADEMIC_QUESTION-001::agent_behavior::001",
+    "policy_id": "POL-ACADEMIC_QUESTION-001",
+    "intent": "academic_question",
+    "category": "Academic Support",
+    "audience": "student",
+    "status": "active",
+    "section": "agent_behavior",
+    "text": "Policy: POL-ACADEMIC_QUESTION-001\nIntent: academic_question\nCategory: Academic Support\nSection: agent_behavior\nContent: - Route queries whose primary intent is `academic_question` toward the `Learning` capability.\n- Use this document as policy/evidence. Do not treat it as proof of the student's current account state.\n- For mutable or student-specific facts, call the appropriate operational tool.\n- If retrieval returns conflicting policy versions, prefer the latest active applicable policy and do not use superseded evidence.\n- If no reliable policy evidence exists, the agent must clarify or escalate rather than invent an answer.\n- If a tool result conflicts with policy text, policy explains what should happen while the operational system explains what currently happened; verify and resolve the discrepancy.",
+    "keywords": [
+      "academic",
+      "question",
+      "academic support",
+      "student support"
+    ]
+  },
+  {
+    "chunk_id": "POL-ACADEMIC_QUESTION-001::grounding_scenarios::001",
+    "policy_id": "POL-ACADEMIC_QUESTION-001",
+    "intent": "academic_question",
+    "category": "Academic Support",
+    "audience": "student",
+    "status": "active",
+    "section": "grounding_scenarios",
+    "text": "Policy: POL-ACADEMIC_QUESTION-001\nIntent: academic_question\nCategory: Academic Support\nSection: grounding_scenarios\nContent: - Known policy question\n- Retrieve the matching policy and answer only from supported evidence.\n- Student-specific state\n- Retrieve policy if needed, then use the appropriate tool for current state.\n- Exception request\n- Do not promise an exception; route to human review when policy requires it.\n- Missing evidence\n- Ask for clarification or escalate instead of hallucinating.\n- Conflicting evidence\n- Resolve by policy version/precedence or escalate.",
+    "keywords": [
+      "academic",
+      "question",
+      "academic support",
+      "student support"
+    ]
+  },
+  {
+    "chunk_id": "POL-ACADEMIC_QUESTION-001::keywords::001",
+    "policy_id": "POL-ACADEMIC_QUESTION-001",
+    "intent": "academic_question",
+    "category": "Academic Support",
+    "audience": "student",
+    "status": "active",
+    "section": "keywords",
+    "text": "Policy: POL-ACADEMIC_QUESTION-001\nIntent: academic_question\nCategory: Academic Support\nSection: keywords\nContent: academic, question, academic support, student support",
+    "keywords": [
+      "academic",
+      "question",
+      "academic support",
+      "student support"
+    ]
+  },
+  {
+    "chunk_id": "POL-ACCOUNT-001::purpose::001",
+    "policy_id": "POL-ACCOUNT-001",
+    "intent": "account",
+    "category": "Account",
+    "audience": "student",
+    "status": "active",
+    "section": "purpose",
+    "text": "Policy: POL-ACCOUNT-001\nIntent: account\nCategory: Account\nSection: purpose\nContent: Student account access, profile, login, and recovery support.",
+    "keywords": [
+      "account",
+      "account",
+      "student support"
+    ]
+  },
+  {
+    "chunk_id": "POL-ACCOUNT-001::core_rules::001",
+    "policy_id": "POL-ACCOUNT-001",
+    "intent": "account",
+    "category": "Account",
+    "audience": "student",
+    "status": "active",
+    "section": "core_rules",
+    "text": "Policy: POL-ACCOUNT-001\nIntent: account\nCategory: Account\nSection: core_rules\nContent: - Use authenticated student identity as the source of truth for account-specific requests.\n- The bot may explain password-reset and account-recovery steps but must never request or expose passwords, OTPs, recovery codes, or security secrets.\n- Account changes that require verified identity must use approved account-management tools.\n- Suspicious activity or possible account takeover must be routed to the security/support workflow.",
+    "keywords": [
+      "account",
+      "account",
+      "student support"
+    ]
+  },
+  {
+    "chunk_id": "POL-ACCOUNT-001::agent_behavior::001",
+    "policy_id": "POL-ACCOUNT-001",
+    "intent": "account",
+    "category": "Account",
+    "audience": "student",
+    "status": "active",
+    "section": "agent_behavior",
+    "text": "Policy: POL-ACCOUNT-001\nIntent: account\nCategory: Account\nSection: agent_behavior\nContent: - Route queries whose primary intent is `account` toward the `Account` capability.\n- Use this document as policy/evidence. Do not treat it as proof of the student's current account state.\n- For mutable or student-specific facts, call the appropriate operational tool.\n- If retrieval returns conflicting policy versions, prefer the latest active applicable policy and do not use superseded evidence.\n- If no reliable policy evidence exists, the agent must clarify or escalate rather than invent an answer.\n- If a tool result conflicts with policy text, policy explains what should happen while the operational system explains what currently happened; verify and resolve the discrepancy.",
+    "keywords": [
+      "account",
+      "account",
+      "student support"
+    ]
+  },
+  {
+    "chunk_id": "POL-ACCOUNT-001::grounding_scenarios::001",
+    "policy_id": "POL-ACCOUNT-001",
+    "intent": "account",
+    "category": "Account",
+    "audience": "student",
+    "status": "active",
+    "section": "grounding_scenarios",
+    "text": "Policy: POL-ACCOUNT-001\nIntent: account\nCategory: Account\nSection: grounding_scenarios\nContent: - Known policy question\n- Retrieve the matching policy and answer only from supported evidence.\n- Student-specific state\n- Retrieve policy if needed, then use the appropriate tool for current state.\n- Exception request\n- Do not promise an exception; route to human review when policy requires it.\n- Missing evidence\n- Ask for clarification or escalate instead of hallucinating.\n- Conflicting evidence\n- Resolve by policy version/precedence or escalate.",
+    "keywords": [
+      "account",
+      "account",
+      "student support"
+    ]
+  },
+  {
+    "chunk_id": "POL-ACCOUNT-001::keywords::001",
+    "policy_id": "POL-ACCOUNT-001",
+    "intent": "account",
+    "category": "Account",
+    "audience": "student",
+    "status": "active",
+    "section": "keywords",
+    "text": "Policy: POL-ACCOUNT-001\nIntent: account\nCategory: Account\nSection: keywords\nContent: account, account, student support",
+    "keywords": [
+      "account",
+      "account",
+      "student support"
+    ]
+  },
+  {
+    "chunk_id": "POL-ASSIGNMENT-001::purpose::001",
+    "policy_id": "POL-ASSIGNMENT-001",
+    "intent": "assignment",
+    "category": "Assignments",
+    "audience": "student",
+    "status": "active",
+    "section": "purpose",
+    "text": "Policy: POL-ASSIGNMENT-001\nIntent: assignment\nCategory: Assignments\nSection: purpose\nContent: Assignment access, submission, deadlines, resubmission, and grading-status support.",
+    "keywords": [
+      "assignment",
+      "assignments",
+      "student support"
+    ]
+  },
+  {
+    "chunk_id": "POL-ASSIGNMENT-001::core_rules::001",
+    "policy_id": "POL-ASSIGNMENT-001",
+    "intent": "assignment",
+    "category": "Assignments",
+    "audience": "student",
+    "status": "active",
+    "section": "core_rules",
+    "text": "Policy: POL-ASSIGNMENT-001\nIntent: assignment\nCategory: Assignments\nSection: core_rules\nContent: - Use the assignment system as the source of truth for deadlines and submission status.\n- Check assignment state, deadline, submission state, and technical errors before proposing a resolution.\n- Do not promise deadline extensions or resubmission rights unless policy/tool data confirms them.\n- The conversational model must never directly alter grades.",
+    "keywords": [
+      "assignment",
+      "assignments",
+      "student support"
+    ]
+  },
+  {
+    "chunk_id": "POL-ASSIGNMENT-001::agent_behavior::001",
+    "policy_id": "POL-ASSIGNMENT-001",
+    "intent": "assignment",
+    "category": "Assignments",
+    "audience": "student",
+    "status": "active",
+    "section": "agent_behavior",
+    "text": "Policy: POL-ASSIGNMENT-001\nIntent: assignment\nCategory: Assignments\nSection: agent_behavior\nContent: - Route queries whose primary intent is `assignment` toward the `Operations` capability.\n- Use this document as policy/evidence. Do not treat it as proof of the student's current account state.\n- For mutable or student-specific facts, call the appropriate operational tool.\n- If retrieval returns conflicting policy versions, prefer the latest active applicable policy and do not use superseded evidence.\n- If no reliable policy evidence exists, the agent must clarify or escalate rather than invent an answer.\n- If a tool result conflicts with policy text, policy explains what should happen while the operational system explains what currently happened; verify and resolve the discrepancy.",
+    "keywords": [
+      "assignment",
+      "assignments",
+      "student support"
+    ]
+  },
+  {
+    "chunk_id": "POL-ASSIGNMENT-001::grounding_scenarios::001",
+    "policy_id": "POL-ASSIGNMENT-001",
+    "intent": "assignment",
+    "category": "Assignments",
+    "audience": "student",
+    "status": "active",
+    "section": "grounding_scenarios",
+    "text": "Policy: POL-ASSIGNMENT-001\nIntent: assignment\nCategory: Assignments\nSection: grounding_scenarios\nContent: - Known policy question\n- Retrieve the matching policy and answer only from supported evidence.\n- Student-specific state\n- Retrieve policy if needed, then use the appropriate tool for current state.\n- Exception request\n- Do not promise an exception; route to human review when policy requires it.\n- Missing evidence\n- Ask for clarification or escalate instead of hallucinating.\n- Conflicting evidence\n- Resolve by policy version/precedence or escalate.",
+    "keywords": [
+      "assignment",
+      "assignments",
+      "student support"
+    ]
+  },
+  {
+    "chunk_id": "POL-ASSIGNMENT-001::keywords::001",
+    "policy_id": "POL-ASSIGNMENT-001",
+    "intent": "assignment",
+    "category": "Assignments",
+    "audience": "student",
+    "status": "active",
+    "section": "keywords",
+    "text": "Policy: POL-ASSIGNMENT-001\nIntent: assignment\nCategory: Assignments\nSection: keywords\nContent: assignment, assignments, student support",
+    "keywords": [
+      "assignment",
+      "assignments",
+      "student support"
+    ]
+  },
+  {
+    "chunk_id": "POL-ATTENDANCE-001::purpose::001",
+    "policy_id": "POL-ATTENDANCE-001",
+    "intent": "attendance",
+    "category": "Classes",
+    "audience": "student",
+    "status": "active",
+    "section": "purpose",
+    "text": "Policy: POL-ATTENDANCE-001\nIntent: attendance\nCategory: Classes\nSection: purpose\nContent: Attendance records, missing attendance, corrections, and missed-session guidance.",
+    "keywords": [
+      "attendance",
+      "classes",
+      "student support"
+    ]
+  },
+  {
+    "chunk_id": "POL-ATTENDANCE-001::core_rules::001",
+    "policy_id": "POL-ATTENDANCE-001",
+    "intent": "attendance",
+    "category": "Classes",
+    "audience": "student",
+    "status": "active",
+    "section": "core_rules",
+    "text": "Policy: POL-ATTENDANCE-001\nIntent: attendance\nCategory: Classes\nSection: core_rules\nContent: - Attendance records must come from the attendance/class system.\n- Do not change or invent attendance based only on the student's claim.\n- Attendance correction and exception requests follow the approved support workflow.\n- Use course policy to explain how attendance is calculated.",
+    "keywords": [
+      "attendance",
+      "classes",
+      "student support"
+    ]
+  },
+  {
+    "chunk_id": "POL-ATTENDANCE-001::agent_behavior::001",
+    "policy_id": "POL-ATTENDANCE-001",
+    "intent": "attendance",
+    "category": "Classes",
+    "audience": "student",
+    "status": "active",
+    "section": "agent_behavior",
+    "text": "Policy: POL-ATTENDANCE-001\nIntent: attendance\nCategory: Classes\nSection: agent_behavior\nContent: - Route queries whose primary intent is `attendance` toward the `Operations` capability.\n- Use this document as policy/evidence. Do not treat it as proof of the student's current account state.\n- For mutable or student-specific facts, call the appropriate operational tool.\n- If retrieval returns conflicting policy versions, prefer the latest active applicable policy and do not use superseded evidence.\n- If no reliable policy evidence exists, the agent must clarify or escalate rather than invent an answer.\n- If a tool result conflicts with policy text, policy explains what should happen while the operational system explains what currently happened; verify and resolve the discrepancy.",
+    "keywords": [
+      "attendance",
+      "classes",
+      "student support"
+    ]
+  },
+  {
+    "chunk_id": "POL-ATTENDANCE-001::grounding_scenarios::001",
+    "policy_id": "POL-ATTENDANCE-001",
+    "intent": "attendance",
+    "category": "Classes",
+    "audience": "student",
+    "status": "active",
+    "section": "grounding_scenarios",
+    "text": "Policy: POL-ATTENDANCE-001\nIntent: attendance\nCategory: Classes\nSection: grounding_scenarios\nContent: - Known policy question\n- Retrieve the matching policy and answer only from supported evidence.\n- Student-specific state\n- Retrieve policy if needed, then use the appropriate tool for current state.\n- Exception request\n- Do not promise an exception; route to human review when policy requires it.\n- Missing evidence\n- Ask for clarification or escalate instead of hallucinating.\n- Conflicting evidence\n- Resolve by policy version/precedence or escalate.",
+    "keywords": [
+      "attendance",
+      "classes",
+      "student support"
+    ]
+  },
+  {
+    "chunk_id": "POL-ATTENDANCE-001::keywords::001",
+    "policy_id": "POL-ATTENDANCE-001",
+    "intent": "attendance",
+    "category": "Classes",
+    "audience": "student",
+    "status": "active",
+    "section": "keywords",
+    "text": "Policy: POL-ATTENDANCE-001\nIntent: attendance\nCategory: Classes\nSection: keywords\nContent: attendance, classes, student support",
+    "keywords": [
+      "attendance",
+      "classes",
+      "student support"
+    ]
+  },
+  {
+    "chunk_id": "POL-CERTIFICATE-001::purpose::001",
+    "policy_id": "POL-CERTIFICATE-001",
+    "intent": "certificate",
+    "category": "Certification",
+    "audience": "student",
+    "status": "active",
+    "section": "purpose",
+    "text": "Policy: POL-CERTIFICATE-001\nIntent: certificate\nCategory: Certification\nSection: purpose\nContent: Certificate eligibility, status, download, and correction support.",
+    "keywords": [
+      "certificate",
+      "certification",
+      "student support"
+    ]
+  },
+  {
+    "chunk_id": "POL-CERTIFICATE-001::core_rules::001",
+    "policy_id": "POL-CERTIFICATE-001",
+    "intent": "certificate",
+    "category": "Certification",
+    "audience": "student",
+    "status": "active",
+    "section": "core_rules",
+    "text": "Policy: POL-CERTIFICATE-001\nIntent: certificate\nCategory: Certification\nSection: core_rules\nContent: - Verify course completion before claiming certificate eligibility.\n- Use the certificate service for current certificate status.\n- If a certificate exists, provide the approved retrieval/download path.\n- Do not create, edit, or fabricate official certificates through the LLM.\n- Certificate generation failures should create or escalate an operational support case.",
+    "keywords": [
+      "certificate",
+      "certification",
+      "student support"
+    ]
+  },
+  {
+    "chunk_id": "POL-CERTIFICATE-001::agent_behavior::001",
+    "policy_id": "POL-CERTIFICATE-001",
+    "intent": "certificate",
+    "category": "Certification",
+    "audience": "student",
+    "status": "active",
+    "section": "agent_behavior",
+    "text": "Policy: POL-CERTIFICATE-001\nIntent: certificate\nCategory: Certification\nSection: agent_behavior\nContent: - Route queries whose primary intent is `certificate` toward the `Operations` capability.\n- Use this document as policy/evidence. Do not treat it as proof of the student's current account state.\n- For mutable or student-specific facts, call the appropriate operational tool.\n- If retrieval returns conflicting policy versions, prefer the latest active applicable policy and do not use superseded evidence.\n- If no reliable policy evidence exists, the agent must clarify or escalate rather than invent an answer.\n- If a tool result conflicts with policy text, policy explains what should happen while the operational system explains what currently happened; verify and resolve the discrepancy.",
+    "keywords": [
+      "certificate",
+      "certification",
+      "student support"
+    ]
+  },
+  {
+    "chunk_id": "POL-CERTIFICATE-001::grounding_scenarios::001",
+    "policy_id": "POL-CERTIFICATE-001",
+    "intent": "certificate",
+    "category": "Certification",
+    "audience": "student",
+    "status": "active",
+    "section": "grounding_scenarios",
+    "text": "Policy: POL-CERTIFICATE-001\nIntent: certificate\nCategory: Certification\nSection: grounding_scenarios\nContent: - Known policy question\n- Retrieve the matching policy and answer only from supported evidence.\n- Student-specific state\n- Retrieve policy if needed, then use the appropriate tool for current state.\n- Exception request\n- Do not promise an exception; route to human review when policy requires it.\n- Missing evidence\n- Ask for clarification or escalate instead of hallucinating.\n- Conflicting evidence\n- Resolve by policy version/precedence or escalate.",
+    "keywords": [
+      "certificate",
+      "certification",
+      "student support"
+    ]
+  },
+  {
+    "chunk_id": "POL-CERTIFICATE-001::keywords::001",
+    "policy_id": "POL-CERTIFICATE-001",
+    "intent": "certificate",
+    "category": "Certification",
+    "audience": "student",
+    "status": "active",
+    "section": "keywords",
+    "text": "Policy: POL-CERTIFICATE-001\nIntent: certificate\nCategory: Certification\nSection: keywords\nContent: certificate, certification, student support",
+    "keywords": [
+      "certificate",
+      "certification",
+      "student support"
+    ]
+  },
+  {
+    "chunk_id": "POL-COURSE_ACCESS-001::purpose::001",
+    "policy_id": "POL-COURSE_ACCESS-001",
+    "intent": "course_access",
+    "category": "Course",
+    "audience": "student",
+    "status": "active",
+    "section": "purpose",
+    "text": "Policy: POL-COURSE_ACCESS-001\nIntent: course_access\nCategory: Course\nSection: purpose\nContent: Course visibility, locked content, entitlement, and access problems.",
+    "keywords": [
+      "course",
+      "access",
+      "course",
+      "student support"
+    ]
+  },
+  {
+    "chunk_id": "POL-COURSE_ACCESS-001::core_rules::001",
+    "policy_id": "POL-COURSE_ACCESS-001",
+    "intent": "course_access",
+    "category": "Course",
+    "audience": "student",
+    "status": "active",
+    "section": "core_rules",
+    "text": "Policy: POL-COURSE_ACCESS-001\nIntent: course_access\nCategory: Course\nSection: core_rules\nContent: - Course access is determined by enrollment and entitlement state.\n- Payment success alone does not prove that course access is active.\n- For access problems, check enrollment and entitlement before proposing a fix.\n- Any remediation must be verified after execution.\n- Never bypass entitlement or access controls.",
+    "keywords": [
+      "course",
+      "access",
+      "course",
+      "student support"
+    ]
+  },
+  {
+    "chunk_id": "POL-COURSE_ACCESS-001::agent_behavior::001",
+    "policy_id": "POL-COURSE_ACCESS-001",
+    "intent": "course_access",
+    "category": "Course",
+    "audience": "student",
+    "status": "active",
+    "section": "agent_behavior",
+    "text": "Policy: POL-COURSE_ACCESS-001\nIntent: course_access\nCategory: Course\nSection: agent_behavior\nContent: - Route queries whose primary intent is `course_access` toward the `Operations` capability.\n- Use this document as policy/evidence. Do not treat it as proof of the student's current account state.\n- For mutable or student-specific facts, call the appropriate operational tool.\n- If retrieval returns conflicting policy versions, prefer the latest active applicable policy and do not use superseded evidence.\n- If no reliable policy evidence exists, the agent must clarify or escalate rather than invent an answer.\n- If a tool result conflicts with policy text, policy explains what should happen while the operational system explains what currently happened; verify and resolve the discrepancy.",
+    "keywords": [
+      "course",
+      "access",
+      "course",
+      "student support"
+    ]
+  },
+  {
+    "chunk_id": "POL-COURSE_ACCESS-001::grounding_scenarios::001",
+    "policy_id": "POL-COURSE_ACCESS-001",
+    "intent": "course_access",
+    "category": "Course",
+    "audience": "student",
+    "status": "active",
+    "section": "grounding_scenarios",
+    "text": "Policy: POL-COURSE_ACCESS-001\nIntent: course_access\nCategory: Course\nSection: grounding_scenarios\nContent: - Known policy question\n- Retrieve the matching policy and answer only from supported evidence.\n- Student-specific state\n- Retrieve policy if needed, then use the appropriate tool for current state.\n- Exception request\n- Do not promise an exception; route to human review when policy requires it.\n- Missing evidence\n- Ask for clarification or escalate instead of hallucinating.\n- Conflicting evidence\n- Resolve by policy version/precedence or escalate.",
+    "keywords": [
+      "course",
+      "access",
+      "course",
+      "student support"
+    ]
+  },
+  {
+    "chunk_id": "POL-COURSE_ACCESS-001::keywords::001",
+    "policy_id": "POL-COURSE_ACCESS-001",
+    "intent": "course_access",
+    "category": "Course",
+    "audience": "student",
+    "status": "active",
+    "section": "keywords",
+    "text": "Policy: POL-COURSE_ACCESS-001\nIntent: course_access\nCategory: Course\nSection: keywords\nContent: course, access, course, student support",
+    "keywords": [
+      "course",
+      "access",
+      "course",
+      "student support"
+    ]
+  },
+  {
+    "chunk_id": "POL-COURSE_CONTENT-001::purpose::001",
+    "policy_id": "POL-COURSE_CONTENT-001",
+    "intent": "course_content",
+    "category": "Course",
+    "audience": "student",
+    "status": "active",
+    "section": "purpose",
+    "text": "Policy: POL-COURSE_CONTENT-001\nIntent: course_content\nCategory: Course\nSection: purpose\nContent: Lesson resources, notes, videos, downloads, and course-material discovery.",
+    "keywords": [
+      "course",
+      "content",
+      "course",
+      "student support"
+    ]
+  },
+  {
+    "chunk_id": "POL-COURSE_CONTENT-001::core_rules::001",
+    "policy_id": "POL-COURSE_CONTENT-001",
+    "intent": "course_content",
+    "category": "Course",
+    "audience": "student",
+    "status": "active",
+    "section": "core_rules",
+    "text": "Policy: POL-COURSE_CONTENT-001\nIntent: course_content\nCategory: Course\nSection: core_rules\nContent: - Use current course content and course metadata as the preferred source for course-specific information.\n- Do not invent lesson links, resource locations, or downloadable files.\n- If content is missing, compare publication status with the student's course entitlement.\n- Do not bypass content-access restrictions.",
+    "keywords": [
+      "course",
+      "content",
+      "course",
+      "student support"
+    ]
+  },
+  {
+    "chunk_id": "POL-COURSE_CONTENT-001::agent_behavior::001",
+    "policy_id": "POL-COURSE_CONTENT-001",
+    "intent": "course_content",
+    "category": "Course",
+    "audience": "student",
+    "status": "active",
+    "section": "agent_behavior",
+    "text": "Policy: POL-COURSE_CONTENT-001\nIntent: course_content\nCategory: Course\nSection: agent_behavior\nContent: - Route queries whose primary intent is `course_content` toward the `Knowledge/Learning` capability.\n- Use this document as policy/evidence. Do not treat it as proof of the student's current account state.\n- For mutable or student-specific facts, call the appropriate operational tool.\n- If retrieval returns conflicting policy versions, prefer the latest active applicable policy and do not use superseded evidence.\n- If no reliable policy evidence exists, the agent must clarify or escalate rather than invent an answer.\n- If a tool result conflicts with policy text, policy explains what should happen while the operational system explains what currently happened; verify and resolve the discrepancy.",
+    "keywords": [
+      "course",
+      "content",
+      "course",
+      "student support"
+    ]
+  },
+  {
+    "chunk_id": "POL-COURSE_CONTENT-001::grounding_scenarios::001",
+    "policy_id": "POL-COURSE_CONTENT-001",
+    "intent": "course_content",
+    "category": "Course",
+    "audience": "student",
+    "status": "active",
+    "section": "grounding_scenarios",
+    "text": "Policy: POL-COURSE_CONTENT-001\nIntent: course_content\nCategory: Course\nSection: grounding_scenarios\nContent: - Known policy question\n- Retrieve the matching policy and answer only from supported evidence.\n- Student-specific state\n- Retrieve policy if needed, then use the appropriate tool for current state.\n- Exception request\n- Do not promise an exception; route to human review when policy requires it.\n- Missing evidence\n- Ask for clarification or escalate instead of hallucinating.\n- Conflicting evidence\n- Resolve by policy version/precedence or escalate.",
+    "keywords": [
+      "course",
+      "content",
+      "course",
+      "student support"
+    ]
+  },
+  {
+    "chunk_id": "POL-COURSE_CONTENT-001::keywords::001",
+    "policy_id": "POL-COURSE_CONTENT-001",
+    "intent": "course_content",
+    "category": "Course",
+    "audience": "student",
+    "status": "active",
+    "section": "keywords",
+    "text": "Policy: POL-COURSE_CONTENT-001\nIntent: course_content\nCategory: Course\nSection: keywords\nContent: course, content, course, student support",
+    "keywords": [
+      "course",
+      "content",
+      "course",
+      "student support"
+    ]
+  },
+  {
+    "chunk_id": "POL-COURSE_INFORMATION-001::purpose::001",
+    "policy_id": "POL-COURSE_INFORMATION-001",
+    "intent": "course_information",
+    "category": "Course",
+    "audience": "student",
+    "status": "active",
+    "section": "purpose",
+    "text": "Policy: POL-COURSE_INFORMATION-001\nIntent: course_information\nCategory: Course\nSection: purpose\nContent: Course syllabus, topics, duration, prerequisites, projects, and general course information.",
+    "keywords": [
+      "course",
+      "information",
+      "course",
+      "student support"
+    ]
+  },
+  {
+    "chunk_id": "POL-COURSE_INFORMATION-001::core_rules::001",
+    "policy_id": "POL-COURSE_INFORMATION-001",
+    "intent": "course_information",
+    "category": "Course",
+    "audience": "student",
+    "status": "active",
+    "section": "core_rules",
+    "text": "Policy: POL-COURSE_INFORMATION-001\nIntent: course_information\nCategory: Course\nSection: core_rules\nContent: - Answer from the current course catalog and published course documentation.\n- Do not invent course duration, pricing, prerequisites, projects, or curriculum details.\n- If a course is not identified, ask for the course name or ID when necessary.\n- Prefer active/latest course information over archived material.",
+    "keywords": [
+      "course",
+      "information",
+      "course",
+      "student support"
+    ]
+  },
+  {
+    "chunk_id": "POL-COURSE_INFORMATION-001::agent_behavior::001",
+    "policy_id": "POL-COURSE_INFORMATION-001",
+    "intent": "course_information",
+    "category": "Course",
+    "audience": "student",
+    "status": "active",
+    "section": "agent_behavior",
+    "text": "Policy: POL-COURSE_INFORMATION-001\nIntent: course_information\nCategory: Course\nSection: agent_behavior\nContent: - Route queries whose primary intent is `course_information` toward the `Knowledge` capability.\n- Use this document as policy/evidence. Do not treat it as proof of the student's current account state.\n- For mutable or student-specific facts, call the appropriate operational tool.\n- If retrieval returns conflicting policy versions, prefer the latest active applicable policy and do not use superseded evidence.\n- If no reliable policy evidence exists, the agent must clarify or escalate rather than invent an answer.\n- If a tool result conflicts with policy text, policy explains what should happen while the operational system explains what currently happened; verify and resolve the discrepancy.",
+    "keywords": [
+      "course",
+      "information",
+      "course",
+      "student support"
+    ]
+  },
+  {
+    "chunk_id": "POL-COURSE_INFORMATION-001::grounding_scenarios::001",
+    "policy_id": "POL-COURSE_INFORMATION-001",
+    "intent": "course_information",
+    "category": "Course",
+    "audience": "student",
+    "status": "active",
+    "section": "grounding_scenarios",
+    "text": "Policy: POL-COURSE_INFORMATION-001\nIntent: course_information\nCategory: Course\nSection: grounding_scenarios\nContent: - Known policy question\n- Retrieve the matching policy and answer only from supported evidence.\n- Student-specific state\n- Retrieve policy if needed, then use the appropriate tool for current state.\n- Exception request\n- Do not promise an exception; route to human review when policy requires it.\n- Missing evidence\n- Ask for clarification or escalate instead of hallucinating.\n- Conflicting evidence\n- Resolve by policy version/precedence or escalate.",
+    "keywords": [
+      "course",
+      "information",
+      "course",
+      "student support"
+    ]
+  },
+  {
+    "chunk_id": "POL-COURSE_INFORMATION-001::keywords::001",
+    "policy_id": "POL-COURSE_INFORMATION-001",
+    "intent": "course_information",
+    "category": "Course",
+    "audience": "student",
+    "status": "active",
+    "section": "keywords",
+    "text": "Policy: POL-COURSE_INFORMATION-001\nIntent: course_information\nCategory: Course\nSection: keywords\nContent: course, information, course, student support",
+    "keywords": [
+      "course",
+      "information",
+      "course",
+      "student support"
+    ]
+  },
+  {
+    "chunk_id": "POL-ENROLLMENT-001::purpose::001",
+    "policy_id": "POL-ENROLLMENT-001",
+    "intent": "enrollment",
+    "category": "Enrollment",
+    "audience": "student",
+    "status": "active",
+    "section": "purpose",
+    "text": "Policy: POL-ENROLLMENT-001\nIntent: enrollment\nCategory: Enrollment\nSection: purpose\nContent: Enrollment, pending enrollment, enrollment failure, and course-selection issues.",
+    "keywords": [
+      "enrollment",
+      "enrollment",
+      "student support"
+    ]
+  },
+  {
+    "chunk_id": "POL-ENROLLMENT-001::core_rules::001",
+    "policy_id": "POL-ENROLLMENT-001",
+    "intent": "enrollment",
+    "category": "Enrollment",
+    "audience": "student",
+    "status": "active",
+    "section": "core_rules",
+    "text": "Policy: POL-ENROLLMENT-001\nIntent: enrollment\nCategory: Enrollment\nSection: core_rules\nContent: - Enrollment status for a student must come from the enrollment system.\n- Pending enrollment must not be described as active until confirmed.\n- If payment succeeded but enrollment failed, compare payment, enrollment, and entitlement state.\n- Course-change or exception requests must follow the applicable policy and may require human approval.",
+    "keywords": [
+      "enrollment",
+      "enrollment",
+      "student support"
+    ]
+  },
+  {
+    "chunk_id": "POL-ENROLLMENT-001::agent_behavior::001",
+    "policy_id": "POL-ENROLLMENT-001",
+    "intent": "enrollment",
+    "category": "Enrollment",
+    "audience": "student",
+    "status": "active",
+    "section": "agent_behavior",
+    "text": "Policy: POL-ENROLLMENT-001\nIntent: enrollment\nCategory: Enrollment\nSection: agent_behavior\nContent: - Route queries whose primary intent is `enrollment` toward the `Operations` capability.\n- Use this document as policy/evidence. Do not treat it as proof of the student's current account state.\n- For mutable or student-specific facts, call the appropriate operational tool.\n- If retrieval returns conflicting policy versions, prefer the latest active applicable policy and do not use superseded evidence.\n- If no reliable policy evidence exists, the agent must clarify or escalate rather than invent an answer.\n- If a tool result conflicts with policy text, policy explains what should happen while the operational system explains what currently happened; verify and resolve the discrepancy.",
+    "keywords": [
+      "enrollment",
+      "enrollment",
+      "student support"
+    ]
+  },
+  {
+    "chunk_id": "POL-ENROLLMENT-001::grounding_scenarios::001",
+    "policy_id": "POL-ENROLLMENT-001",
+    "intent": "enrollment",
+    "category": "Enrollment",
+    "audience": "student",
+    "status": "active",
+    "section": "grounding_scenarios",
+    "text": "Policy: POL-ENROLLMENT-001\nIntent: enrollment\nCategory: Enrollment\nSection: grounding_scenarios\nContent: - Known policy question\n- Retrieve the matching policy and answer only from supported evidence.\n- Student-specific state\n- Retrieve policy if needed, then use the appropriate tool for current state.\n- Exception request\n- Do not promise an exception; route to human review when policy requires it.\n- Missing evidence\n- Ask for clarification or escalate instead of hallucinating.\n- Conflicting evidence\n- Resolve by policy version/precedence or escalate.",
+    "keywords": [
+      "enrollment",
+      "enrollment",
+      "student support"
+    ]
+  },
+  {
+    "chunk_id": "POL-ENROLLMENT-001::keywords::001",
+    "policy_id": "POL-ENROLLMENT-001",
+    "intent": "enrollment",
+    "category": "Enrollment",
+    "audience": "student",
+    "status": "active",
+    "section": "keywords",
+    "text": "Policy: POL-ENROLLMENT-001\nIntent: enrollment\nCategory: Enrollment\nSection: keywords\nContent: enrollment, enrollment, student support",
+    "keywords": [
+      "enrollment",
+      "enrollment",
+      "student support"
+    ]
+  },
+  {
+    "chunk_id": "POL-EXAM-001::purpose::001",
+    "policy_id": "POL-EXAM-001",
+    "intent": "exam",
+    "category": "Exams",
+    "audience": "student",
+    "status": "active",
+    "section": "purpose",
+    "text": "Policy: POL-EXAM-001\nIntent: exam\nCategory: Exams\nSection: purpose\nContent: Exam schedule, access, rules, results, and technical exam problems.",
+    "keywords": [
+      "exam",
+      "exams",
+      "student support"
+    ]
+  },
+  {
+    "chunk_id": "POL-EXAM-001::core_rules::001",
+    "policy_id": "POL-EXAM-001",
+    "intent": "exam",
+    "category": "Exams",
+    "audience": "student",
+    "status": "active",
+    "section": "core_rules",
+    "text": "Policy: POL-EXAM-001\nIntent: exam\nCategory: Exams\nSection: core_rules\nContent: - Use the examination system for student-specific exam status and schedule.\n- Do not reveal restricted exam content, answer keys, proctoring secrets, or assessment security controls.\n- Verify technical exam incidents before claiming a platform failure.\n- Exam exceptions or result changes require authorized human review.",
+    "keywords": [
+      "exam",
+      "exams",
+      "student support"
+    ]
+  },
+  {
+    "chunk_id": "POL-EXAM-001::agent_behavior::001",
+    "policy_id": "POL-EXAM-001",
+    "intent": "exam",
+    "category": "Exams",
+    "audience": "student",
+    "status": "active",
+    "section": "agent_behavior",
+    "text": "Policy: POL-EXAM-001\nIntent: exam\nCategory: Exams\nSection: agent_behavior\nContent: - Route queries whose primary intent is `exam` toward the `Operations/Knowledge` capability.\n- Use this document as policy/evidence. Do not treat it as proof of the student's current account state.\n- For mutable or student-specific facts, call the appropriate operational tool.\n- If retrieval returns conflicting policy versions, prefer the latest active applicable policy and do not use superseded evidence.\n- If no reliable policy evidence exists, the agent must clarify or escalate rather than invent an answer.\n- If a tool result conflicts with policy text, policy explains what should happen while the operational system explains what currently happened; verify and resolve the discrepancy.",
+    "keywords": [
+      "exam",
+      "exams",
+      "student support"
+    ]
+  },
+  {
+    "chunk_id": "POL-EXAM-001::grounding_scenarios::001",
+    "policy_id": "POL-EXAM-001",
+    "intent": "exam",
+    "category": "Exams",
+    "audience": "student",
+    "status": "active",
+    "section": "grounding_scenarios",
+    "text": "Policy: POL-EXAM-001\nIntent: exam\nCategory: Exams\nSection: grounding_scenarios\nContent: - Known policy question\n- Retrieve the matching policy and answer only from supported evidence.\n- Student-specific state\n- Retrieve policy if needed, then use the appropriate tool for current state.\n- Exception request\n- Do not promise an exception; route to human review when policy requires it.\n- Missing evidence\n- Ask for clarification or escalate instead of hallucinating.\n- Conflicting evidence\n- Resolve by policy version/precedence or escalate.",
+    "keywords": [
+      "exam",
+      "exams",
+      "student support"
+    ]
+  },
+  {
+    "chunk_id": "POL-EXAM-001::keywords::001",
+    "policy_id": "POL-EXAM-001",
+    "intent": "exam",
+    "category": "Exams",
+    "audience": "student",
+    "status": "active",
+    "section": "keywords",
+    "text": "Policy: POL-EXAM-001\nIntent: exam\nCategory: Exams\nSection: keywords\nContent: exam, exams, student support",
+    "keywords": [
+      "exam",
+      "exams",
+      "student support"
+    ]
+  },
+  {
+    "chunk_id": "POL-FEEDBACK_COMPLAINT-001::purpose::001",
+    "policy_id": "POL-FEEDBACK_COMPLAINT-001",
+    "intent": "feedback_complaint",
+    "category": "Support",
+    "audience": "student",
+    "status": "active",
+    "section": "purpose",
+    "text": "Policy: POL-FEEDBACK_COMPLAINT-001\nIntent: feedback_complaint\nCategory: Support\nSection: purpose\nContent: Student feedback, complaints, dissatisfaction, and service issues.",
+    "keywords": [
+      "feedback",
+      "complaint",
+      "support",
+      "student support"
+    ]
+  },
+  {
+    "chunk_id": "POL-FEEDBACK_COMPLAINT-001::core_rules::001",
+    "policy_id": "POL-FEEDBACK_COMPLAINT-001",
+    "intent": "feedback_complaint",
+    "category": "Support",
+    "audience": "student",
+    "status": "active",
+    "section": "core_rules",
+    "text": "Policy: POL-FEEDBACK_COMPLAINT-001\nIntent: feedback_complaint\nCategory: Support\nSection: core_rules\nContent: - Record complaints factually and neutrally.\n- Do not promise compensation, disciplinary action, or policy exceptions without authority.\n- Collect only the information needed to route and investigate the issue.\n- High-severity complaints, serious misconduct, safety concerns, or legal matters require human handling.",
+    "keywords": [
+      "feedback",
+      "complaint",
+      "support",
+      "student support"
+    ]
+  },
+  {
+    "chunk_id": "POL-FEEDBACK_COMPLAINT-001::agent_behavior::001",
+    "policy_id": "POL-FEEDBACK_COMPLAINT-001",
+    "intent": "feedback_complaint",
+    "category": "Support",
+    "audience": "student",
+    "status": "active",
+    "section": "agent_behavior",
+    "text": "Policy: POL-FEEDBACK_COMPLAINT-001\nIntent: feedback_complaint\nCategory: Support\nSection: agent_behavior\nContent: - Route queries whose primary intent is `feedback_complaint` toward the `Escalation` capability.\n- Use this document as policy/evidence. Do not treat it as proof of the student's current account state.\n- For mutable or student-specific facts, call the appropriate operational tool.\n- If retrieval returns conflicting policy versions, prefer the latest active applicable policy and do not use superseded evidence.\n- If no reliable policy evidence exists, the agent must clarify or escalate rather than invent an answer.\n- If a tool result conflicts with policy text, policy explains what should happen while the operational system explains what currently happened; verify and resolve the discrepancy.",
+    "keywords": [
+      "feedback",
+      "complaint",
+      "support",
+      "student support"
+    ]
+  },
+  {
+    "chunk_id": "POL-FEEDBACK_COMPLAINT-001::grounding_scenarios::001",
+    "policy_id": "POL-FEEDBACK_COMPLAINT-001",
+    "intent": "feedback_complaint",
+    "category": "Support",
+    "audience": "student",
+    "status": "active",
+    "section": "grounding_scenarios",
+    "text": "Policy: POL-FEEDBACK_COMPLAINT-001\nIntent: feedback_complaint\nCategory: Support\nSection: grounding_scenarios\nContent: - Known policy question\n- Retrieve the matching policy and answer only from supported evidence.\n- Student-specific state\n- Retrieve policy if needed, then use the appropriate tool for current state.\n- Exception request\n- Do not promise an exception; route to human review when policy requires it.\n- Missing evidence\n- Ask for clarification or escalate instead of hallucinating.\n- Conflicting evidence\n- Resolve by policy version/precedence or escalate.",
+    "keywords": [
+      "feedback",
+      "complaint",
+      "support",
+      "student support"
+    ]
+  },
+  {
+    "chunk_id": "POL-FEEDBACK_COMPLAINT-001::keywords::001",
+    "policy_id": "POL-FEEDBACK_COMPLAINT-001",
+    "intent": "feedback_complaint",
+    "category": "Support",
+    "audience": "student",
+    "status": "active",
+    "section": "keywords",
+    "text": "Policy: POL-FEEDBACK_COMPLAINT-001\nIntent: feedback_complaint\nCategory: Support\nSection: keywords\nContent: feedback, complaint, support, student support",
+    "keywords": [
+      "feedback",
+      "complaint",
+      "support",
+      "student support"
+    ]
+  },
+  {
+    "chunk_id": "POL-HUMAN_SUPPORT-001::purpose::001",
+    "policy_id": "POL-HUMAN_SUPPORT-001",
+    "intent": "human_support",
+    "category": "Support",
+    "audience": "student",
+    "status": "active",
+    "section": "purpose",
+    "text": "Policy: POL-HUMAN_SUPPORT-001\nIntent: human_support\nCategory: Support\nSection: purpose\nContent: Requests to speak to or be transferred to human support.",
+    "keywords": [
+      "human",
+      "support",
+      "support",
+      "student support"
+    ]
+  },
+  {
+    "chunk_id": "POL-HUMAN_SUPPORT-001::core_rules::001",
+    "policy_id": "POL-HUMAN_SUPPORT-001",
+    "intent": "human_support",
+    "category": "Support",
+    "audience": "student",
+    "status": "active",
+    "section": "core_rules",
+    "text": "Policy: POL-HUMAN_SUPPORT-001\nIntent: human_support\nCategory: Support\nSection: core_rules\nContent: - A clear student request for human support should be honored.\n- Preserve conversation context, verified facts, actions taken, and the reason for escalation.\n- Creating a ticket is not the same as resolving the student's issue.\n- Escalation priority should reflect impact and risk.",
+    "keywords": [
+      "human",
+      "support",
+      "support",
+      "student support"
+    ]
+  },
+  {
+    "chunk_id": "POL-HUMAN_SUPPORT-001::agent_behavior::001",
+    "policy_id": "POL-HUMAN_SUPPORT-001",
+    "intent": "human_support",
+    "category": "Support",
+    "audience": "student",
+    "status": "active",
+    "section": "agent_behavior",
+    "text": "Policy: POL-HUMAN_SUPPORT-001\nIntent: human_support\nCategory: Support\nSection: agent_behavior\nContent: - Route queries whose primary intent is `human_support` toward the `Escalation` capability.\n- Use this document as policy/evidence. Do not treat it as proof of the student's current account state.\n- For mutable or student-specific facts, call the appropriate operational tool.\n- If retrieval returns conflicting policy versions, prefer the latest active applicable policy and do not use superseded evidence.\n- If no reliable policy evidence exists, the agent must clarify or escalate rather than invent an answer.\n- If a tool result conflicts with policy text, policy explains what should happen while the operational system explains what currently happened; verify and resolve the discrepancy.",
+    "keywords": [
+      "human",
+      "support",
+      "support",
+      "student support"
+    ]
+  },
+  {
+    "chunk_id": "POL-HUMAN_SUPPORT-001::grounding_scenarios::001",
+    "policy_id": "POL-HUMAN_SUPPORT-001",
+    "intent": "human_support",
+    "category": "Support",
+    "audience": "student",
+    "status": "active",
+    "section": "grounding_scenarios",
+    "text": "Policy: POL-HUMAN_SUPPORT-001\nIntent: human_support\nCategory: Support\nSection: grounding_scenarios\nContent: - Known policy question\n- Retrieve the matching policy and answer only from supported evidence.\n- Student-specific state\n- Retrieve policy if needed, then use the appropriate tool for current state.\n- Exception request\n- Do not promise an exception; route to human review when policy requires it.\n- Missing evidence\n- Ask for clarification or escalate instead of hallucinating.\n- Conflicting evidence\n- Resolve by policy version/precedence or escalate.",
+    "keywords": [
+      "human",
+      "support",
+      "support",
+      "student support"
+    ]
+  },
+  {
+    "chunk_id": "POL-HUMAN_SUPPORT-001::keywords::001",
+    "policy_id": "POL-HUMAN_SUPPORT-001",
+    "intent": "human_support",
+    "category": "Support",
+    "audience": "student",
+    "status": "active",
+    "section": "keywords",
+    "text": "Policy: POL-HUMAN_SUPPORT-001\nIntent: human_support\nCategory: Support\nSection: keywords\nContent: human, support, support, student support",
+    "keywords": [
+      "human",
+      "support",
+      "support",
+      "student support"
+    ]
+  },
+  {
+    "chunk_id": "POL-PAYMENT-001::purpose::001",
+    "policy_id": "POL-PAYMENT-001",
+    "intent": "payment",
+    "category": "Payments",
+    "audience": "student",
+    "status": "active",
+    "section": "purpose",
+    "text": "Policy: POL-PAYMENT-001\nIntent: payment\nCategory: Payments\nSection: purpose\nContent: Payment status, failed payments, pending payments, successful charges, and duplicate charges.",
+    "keywords": [
+      "payment",
+      "payments",
+      "student support"
+    ]
+  },
+  {
+    "chunk_id": "POL-PAYMENT-001::core_rules::001",
+    "policy_id": "POL-PAYMENT-001",
+    "intent": "payment",
+    "category": "Payments",
+    "audience": "student",
+    "status": "active",
+    "section": "core_rules",
+    "text": "Policy: POL-PAYMENT-001\nIntent: payment\nCategory: Payments\nSection: core_rules\nContent: - Use the payment system as the source of truth for student-specific payment state.\n- Never request card numbers, CVV, passwords, or other payment secrets.\n- For a charge-versus-enrollment mismatch, verify transaction and enrollment status before responding.\n- Duplicate or disputed financial transactions may require manual investigation.\n- Never claim a payment succeeded, failed, or was refunded without system evidence.",
+    "keywords": [
+      "payment",
+      "payments",
+      "student support"
+    ]
+  },
+  {
+    "chunk_id": "POL-PAYMENT-001::agent_behavior::001",
+    "policy_id": "POL-PAYMENT-001",
+    "intent": "payment",
+    "category": "Payments",
+    "audience": "student",
+    "status": "active",
+    "section": "agent_behavior",
+    "text": "Policy: POL-PAYMENT-001\nIntent: payment\nCategory: Payments\nSection: agent_behavior\nContent: - Route queries whose primary intent is `payment` toward the `Operations` capability.\n- Use this document as policy/evidence. Do not treat it as proof of the student's current account state.\n- For mutable or student-specific facts, call the appropriate operational tool.\n- If retrieval returns conflicting policy versions, prefer the latest active applicable policy and do not use superseded evidence.\n- If no reliable policy evidence exists, the agent must clarify or escalate rather than invent an answer.\n- If a tool result conflicts with policy text, policy explains what should happen while the operational system explains what currently happened; verify and resolve the discrepancy.",
+    "keywords": [
+      "payment",
+      "payments",
+      "student support"
+    ]
+  },
+  {
+    "chunk_id": "POL-PAYMENT-001::grounding_scenarios::001",
+    "policy_id": "POL-PAYMENT-001",
+    "intent": "payment",
+    "category": "Payments",
+    "audience": "student",
+    "status": "active",
+    "section": "grounding_scenarios",
+    "text": "Policy: POL-PAYMENT-001\nIntent: payment\nCategory: Payments\nSection: grounding_scenarios\nContent: - Known policy question\n- Retrieve the matching policy and answer only from supported evidence.\n- Student-specific state\n- Retrieve policy if needed, then use the appropriate tool for current state.\n- Exception request\n- Do not promise an exception; route to human review when policy requires it.\n- Missing evidence\n- Ask for clarification or escalate instead of hallucinating.\n- Conflicting evidence\n- Resolve by policy version/precedence or escalate.",
+    "keywords": [
+      "payment",
+      "payments",
+      "student support"
+    ]
+  },
+  {
+    "chunk_id": "POL-PAYMENT-001::keywords::001",
+    "policy_id": "POL-PAYMENT-001",
+    "intent": "payment",
+    "category": "Payments",
+    "audience": "student",
+    "status": "active",
+    "section": "keywords",
+    "text": "Policy: POL-PAYMENT-001\nIntent: payment\nCategory: Payments\nSection: keywords\nContent: payment, payments, student support",
+    "keywords": [
+      "payment",
+      "payments",
+      "student support"
+    ]
+  },
+  {
+    "chunk_id": "POL-PROGRESS-001::purpose::001",
+    "policy_id": "POL-PROGRESS-001",
+    "intent": "progress",
+    "category": "Learning Progress",
+    "audience": "student",
+    "status": "active",
+    "section": "purpose",
+    "text": "Policy: POL-PROGRESS-001\nIntent: progress\nCategory: Learning Progress\nSection: purpose\nContent: Course progress, lesson completion, progress percentage, and completion-state issues.",
+    "keywords": [
+      "progress",
+      "learning progress",
+      "student support"
+    ]
+  },
+  {
+    "chunk_id": "POL-PROGRESS-001::core_rules::001",
+    "policy_id": "POL-PROGRESS-001",
+    "intent": "progress",
+    "category": "Learning Progress",
+    "audience": "student",
+    "status": "active",
+    "section": "core_rules",
+    "text": "Policy: POL-PROGRESS-001\nIntent: progress\nCategory: Learning Progress\nSection: core_rules\nContent: - Use platform completion records as the source of truth for student progress.\n- If displayed progress conflicts with underlying completion events, investigate the mismatch instead of inventing a cause.\n- Do not manually alter progress through the LLM.\n- Explain progress rules using current course documentation.",
+    "keywords": [
+      "progress",
+      "learning progress",
+      "student support"
+    ]
+  },
+  {
+    "chunk_id": "POL-PROGRESS-001::agent_behavior::001",
+    "policy_id": "POL-PROGRESS-001",
+    "intent": "progress",
+    "category": "Learning Progress",
+    "audience": "student",
+    "status": "active",
+    "section": "agent_behavior",
+    "text": "Policy: POL-PROGRESS-001\nIntent: progress\nCategory: Learning Progress\nSection: agent_behavior\nContent: - Route queries whose primary intent is `progress` toward the `Operations` capability.\n- Use this document as policy/evidence. Do not treat it as proof of the student's current account state.\n- For mutable or student-specific facts, call the appropriate operational tool.\n- If retrieval returns conflicting policy versions, prefer the latest active applicable policy and do not use superseded evidence.\n- If no reliable policy evidence exists, the agent must clarify or escalate rather than invent an answer.\n- If a tool result conflicts with policy text, policy explains what should happen while the operational system explains what currently happened; verify and resolve the discrepancy.",
+    "keywords": [
+      "progress",
+      "learning progress",
+      "student support"
+    ]
+  },
+  {
+    "chunk_id": "POL-PROGRESS-001::grounding_scenarios::001",
+    "policy_id": "POL-PROGRESS-001",
+    "intent": "progress",
+    "category": "Learning Progress",
+    "audience": "student",
+    "status": "active",
+    "section": "grounding_scenarios",
+    "text": "Policy: POL-PROGRESS-001\nIntent: progress\nCategory: Learning Progress\nSection: grounding_scenarios\nContent: - Known policy question\n- Retrieve the matching policy and answer only from supported evidence.\n- Student-specific state\n- Retrieve policy if needed, then use the appropriate tool for current state.\n- Exception request\n- Do not promise an exception; route to human review when policy requires it.\n- Missing evidence\n- Ask for clarification or escalate instead of hallucinating.\n- Conflicting evidence\n- Resolve by policy version/precedence or escalate.",
+    "keywords": [
+      "progress",
+      "learning progress",
+      "student support"
+    ]
+  },
+  {
+    "chunk_id": "POL-PROGRESS-001::keywords::001",
+    "policy_id": "POL-PROGRESS-001",
+    "intent": "progress",
+    "category": "Learning Progress",
+    "audience": "student",
+    "status": "active",
+    "section": "keywords",
+    "text": "Policy: POL-PROGRESS-001\nIntent: progress\nCategory: Learning Progress\nSection: keywords\nContent: progress, learning progress, student support",
+    "keywords": [
+      "progress",
+      "learning progress",
+      "student support"
+    ]
+  },
+  {
+    "chunk_id": "POL-REFUND-001::purpose::001",
+    "policy_id": "POL-REFUND-001",
+    "intent": "refund",
+    "category": "Payments",
+    "audience": "student",
+    "status": "active",
+    "section": "purpose",
+    "text": "Policy: POL-REFUND-001\nIntent: refund\nCategory: Payments\nSection: purpose\nContent: Refund eligibility, cancellation, refund status, and processing guidance.",
+    "keywords": [
+      "refund",
+      "payments",
+      "student support"
+    ]
+  },
+  {
+    "chunk_id": "POL-REFUND-001::core_rules::001",
+    "policy_id": "POL-REFUND-001",
+    "intent": "refund",
+    "category": "Payments",
+    "audience": "student",
+    "status": "active",
+    "section": "core_rules",
+    "text": "Policy: POL-REFUND-001\nIntent: refund\nCategory: Payments\nSection: core_rules\nContent: - Refund eligibility depends on the active refund policy and the student's actual transaction.\n- Use policy retrieval for eligibility rules and tools for account-specific transaction status.\n- Do not invent refund windows, exclusions, or exceptions.\n- Do not promise a refund until the authorized workflow confirms eligibility/action.\n- Policy exceptions require human review.",
+    "keywords": [
+      "refund",
+      "payments",
+      "student support"
+    ]
+  },
+  {
+    "chunk_id": "POL-REFUND-001::agent_behavior::001",
+    "policy_id": "POL-REFUND-001",
+    "intent": "refund",
+    "category": "Payments",
+    "audience": "student",
+    "status": "active",
+    "section": "agent_behavior",
+    "text": "Policy: POL-REFUND-001\nIntent: refund\nCategory: Payments\nSection: agent_behavior\nContent: - Route queries whose primary intent is `refund` toward the `Knowledge/Operations` capability.\n- Use this document as policy/evidence. Do not treat it as proof of the student's current account state.\n- For mutable or student-specific facts, call the appropriate operational tool.\n- If retrieval returns conflicting policy versions, prefer the latest active applicable policy and do not use superseded evidence.\n- If no reliable policy evidence exists, the agent must clarify or escalate rather than invent an answer.\n- If a tool result conflicts with policy text, policy explains what should happen while the operational system explains what currently happened; verify and resolve the discrepancy.",
+    "keywords": [
+      "refund",
+      "payments",
+      "student support"
+    ]
+  },
+  {
+    "chunk_id": "POL-REFUND-001::grounding_scenarios::001",
+    "policy_id": "POL-REFUND-001",
+    "intent": "refund",
+    "category": "Payments",
+    "audience": "student",
+    "status": "active",
+    "section": "grounding_scenarios",
+    "text": "Policy: POL-REFUND-001\nIntent: refund\nCategory: Payments\nSection: grounding_scenarios\nContent: - Known policy question\n- Retrieve the matching policy and answer only from supported evidence.\n- Student-specific state\n- Retrieve policy if needed, then use the appropriate tool for current state.\n- Exception request\n- Do not promise an exception; route to human review when policy requires it.\n- Missing evidence\n- Ask for clarification or escalate instead of hallucinating.\n- Conflicting evidence\n- Resolve by policy version/precedence or escalate.",
+    "keywords": [
+      "refund",
+      "payments",
+      "student support"
+    ]
+  },
+  {
+    "chunk_id": "POL-REFUND-001::keywords::001",
+    "policy_id": "POL-REFUND-001",
+    "intent": "refund",
+    "category": "Payments",
+    "audience": "student",
+    "status": "active",
+    "section": "keywords",
+    "text": "Policy: POL-REFUND-001\nIntent: refund\nCategory: Payments\nSection: keywords\nContent: refund, payments, student support",
+    "keywords": [
+      "refund",
+      "payments",
+      "student support"
+    ]
+  },
+  {
+    "chunk_id": "POL-SCHEDULE-001::purpose::001",
+    "policy_id": "POL-SCHEDULE-001",
+    "intent": "schedule",
+    "category": "Classes",
+    "audience": "student",
+    "status": "active",
+    "section": "purpose",
+    "text": "Policy: POL-SCHEDULE-001\nIntent: schedule\nCategory: Classes\nSection: purpose\nContent: Live class schedule, session timing, missed classes, and rescheduling.",
+    "keywords": [
+      "schedule",
+      "classes",
+      "student support"
+    ]
+  },
+  {
+    "chunk_id": "POL-SCHEDULE-001::core_rules::001",
+    "policy_id": "POL-SCHEDULE-001",
+    "intent": "schedule",
+    "category": "Classes",
+    "audience": "student",
+    "status": "active",
+    "section": "core_rules",
+    "text": "Policy: POL-SCHEDULE-001\nIntent: schedule\nCategory: Classes\nSection: core_rules\nContent: - Use the scheduling system for current class times and session status.\n- Do not invent or guess a student's schedule.\n- A reschedule is not complete until the scheduling service confirms the new session.\n- Missed-class handling follows the active attendance/make-up policy.",
+    "keywords": [
+      "schedule",
+      "classes",
+      "student support"
+    ]
+  },
+  {
+    "chunk_id": "POL-SCHEDULE-001::agent_behavior::001",
+    "policy_id": "POL-SCHEDULE-001",
+    "intent": "schedule",
+    "category": "Classes",
+    "audience": "student",
+    "status": "active",
+    "section": "agent_behavior",
+    "text": "Policy: POL-SCHEDULE-001\nIntent: schedule\nCategory: Classes\nSection: agent_behavior\nContent: - Route queries whose primary intent is `schedule` toward the `Operations` capability.\n- Use this document as policy/evidence. Do not treat it as proof of the student's current account state.\n- For mutable or student-specific facts, call the appropriate operational tool.\n- If retrieval returns conflicting policy versions, prefer the latest active applicable policy and do not use superseded evidence.\n- If no reliable policy evidence exists, the agent must clarify or escalate rather than invent an answer.\n- If a tool result conflicts with policy text, policy explains what should happen while the operational system explains what currently happened; verify and resolve the discrepancy.",
+    "keywords": [
+      "schedule",
+      "classes",
+      "student support"
+    ]
+  },
+  {
+    "chunk_id": "POL-SCHEDULE-001::grounding_scenarios::001",
+    "policy_id": "POL-SCHEDULE-001",
+    "intent": "schedule",
+    "category": "Classes",
+    "audience": "student",
+    "status": "active",
+    "section": "grounding_scenarios",
+    "text": "Policy: POL-SCHEDULE-001\nIntent: schedule\nCategory: Classes\nSection: grounding_scenarios\nContent: - Known policy question\n- Retrieve the matching policy and answer only from supported evidence.\n- Student-specific state\n- Retrieve policy if needed, then use the appropriate tool for current state.\n- Exception request\n- Do not promise an exception; route to human review when policy requires it.\n- Missing evidence\n- Ask for clarification or escalate instead of hallucinating.\n- Conflicting evidence\n- Resolve by policy version/precedence or escalate.",
+    "keywords": [
+      "schedule",
+      "classes",
+      "student support"
+    ]
+  },
+  {
+    "chunk_id": "POL-SCHEDULE-001::keywords::001",
+    "policy_id": "POL-SCHEDULE-001",
+    "intent": "schedule",
+    "category": "Classes",
+    "audience": "student",
+    "status": "active",
+    "section": "keywords",
+    "text": "Policy: POL-SCHEDULE-001\nIntent: schedule\nCategory: Classes\nSection: keywords\nContent: schedule, classes, student support",
+    "keywords": [
+      "schedule",
+      "classes",
+      "student support"
+    ]
+  },
+  {
+    "chunk_id": "POL-SUBSCRIPTION-001::purpose::001",
+    "policy_id": "POL-SUBSCRIPTION-001",
+    "intent": "subscription",
+    "category": "Subscription",
+    "audience": "student",
+    "status": "active",
+    "section": "purpose",
+    "text": "Policy: POL-SUBSCRIPTION-001\nIntent: subscription\nCategory: Subscription\nSection: purpose\nContent: Subscription status, renewal, cancellation, expiry, and plan changes.",
+    "keywords": [
+      "subscription",
+      "subscription",
+      "student support"
+    ]
+  },
+  {
+    "chunk_id": "POL-SUBSCRIPTION-001::core_rules::001",
+    "policy_id": "POL-SUBSCRIPTION-001",
+    "intent": "subscription",
+    "category": "Subscription",
+    "audience": "student",
+    "status": "active",
+    "section": "core_rules",
+    "text": "Policy: POL-SUBSCRIPTION-001\nIntent: subscription\nCategory: Subscription\nSection: core_rules\nContent: - Use the subscription system for current plan and billing state.\n- Distinguish between cancellation of future renewal and immediate access termination.\n- Do not claim a cancellation succeeded until the system confirms it.\n- If subscription and course entitlement disagree, investigate the mismatch.",
+    "keywords": [
+      "subscription",
+      "subscription",
+      "student support"
+    ]
+  },
+  {
+    "chunk_id": "POL-SUBSCRIPTION-001::agent_behavior::001",
+    "policy_id": "POL-SUBSCRIPTION-001",
+    "intent": "subscription",
+    "category": "Subscription",
+    "audience": "student",
+    "status": "active",
+    "section": "agent_behavior",
+    "text": "Policy: POL-SUBSCRIPTION-001\nIntent: subscription\nCategory: Subscription\nSection: agent_behavior\nContent: - Route queries whose primary intent is `subscription` toward the `Operations` capability.\n- Use this document as policy/evidence. Do not treat it as proof of the student's current account state.\n- For mutable or student-specific facts, call the appropriate operational tool.\n- If retrieval returns conflicting policy versions, prefer the latest active applicable policy and do not use superseded evidence.\n- If no reliable policy evidence exists, the agent must clarify or escalate rather than invent an answer.\n- If a tool result conflicts with policy text, policy explains what should happen while the operational system explains what currently happened; verify and resolve the discrepancy.",
+    "keywords": [
+      "subscription",
+      "subscription",
+      "student support"
+    ]
+  },
+  {
+    "chunk_id": "POL-SUBSCRIPTION-001::grounding_scenarios::001",
+    "policy_id": "POL-SUBSCRIPTION-001",
+    "intent": "subscription",
+    "category": "Subscription",
+    "audience": "student",
+    "status": "active",
+    "section": "grounding_scenarios",
+    "text": "Policy: POL-SUBSCRIPTION-001\nIntent: subscription\nCategory: Subscription\nSection: grounding_scenarios\nContent: - Known policy question\n- Retrieve the matching policy and answer only from supported evidence.\n- Student-specific state\n- Retrieve policy if needed, then use the appropriate tool for current state.\n- Exception request\n- Do not promise an exception; route to human review when policy requires it.\n- Missing evidence\n- Ask for clarification or escalate instead of hallucinating.\n- Conflicting evidence\n- Resolve by policy version/precedence or escalate.",
+    "keywords": [
+      "subscription",
+      "subscription",
+      "student support"
+    ]
+  },
+  {
+    "chunk_id": "POL-SUBSCRIPTION-001::keywords::001",
+    "policy_id": "POL-SUBSCRIPTION-001",
+    "intent": "subscription",
+    "category": "Subscription",
+    "audience": "student",
+    "status": "active",
+    "section": "keywords",
+    "text": "Policy: POL-SUBSCRIPTION-001\nIntent: subscription\nCategory: Subscription\nSection: keywords\nContent: subscription, subscription, student support",
+    "keywords": [
+      "subscription",
+      "subscription",
+      "student support"
+    ]
+  },
+  {
+    "chunk_id": "POL-TECHNICAL_ISSUE-001::purpose::001",
+    "policy_id": "POL-TECHNICAL_ISSUE-001",
+    "intent": "technical_issue",
+    "category": "Technical Support",
+    "audience": "student",
+    "status": "active",
+    "section": "purpose",
+    "text": "Policy: POL-TECHNICAL_ISSUE-001\nIntent: technical_issue\nCategory: Technical Support\nSection: purpose\nContent: Learning-platform, app, browser, video, and content-loading problems.",
+    "keywords": [
+      "technical",
+      "issue",
+      "technical support",
+      "student support"
+    ]
+  },
+  {
+    "chunk_id": "POL-TECHNICAL_ISSUE-001::core_rules::001",
+    "policy_id": "POL-TECHNICAL_ISSUE-001",
+    "intent": "technical_issue",
+    "category": "Technical Support",
+    "audience": "student",
+    "status": "active",
+    "section": "core_rules",
+    "text": "Policy: POL-TECHNICAL_ISSUE-001\nIntent: technical_issue\nCategory: Technical Support\nSection: core_rules\nContent: - First identify whether the problem is account-specific, course-specific, device/browser-specific, or a wider platform incident.\n- Use known safe troubleshooting steps and avoid destructive instructions.\n- Never ask students for passwords, OTPs, or private secrets.\n- Prefer verified incident information over unsupported assumptions.\n- Escalate persistent failures after the approved troubleshooting flow.",
+    "keywords": [
+      "technical",
+      "issue",
+      "technical support",
+      "student support"
+    ]
+  },
+  {
+    "chunk_id": "POL-TECHNICAL_ISSUE-001::agent_behavior::001",
+    "policy_id": "POL-TECHNICAL_ISSUE-001",
+    "intent": "technical_issue",
+    "category": "Technical Support",
+    "audience": "student",
+    "status": "active",
+    "section": "agent_behavior",
+    "text": "Policy: POL-TECHNICAL_ISSUE-001\nIntent: technical_issue\nCategory: Technical Support\nSection: agent_behavior\nContent: - Route queries whose primary intent is `technical_issue` toward the `Operations/Knowledge` capability.\n- Use this document as policy/evidence. Do not treat it as proof of the student's current account state.\n- For mutable or student-specific facts, call the appropriate operational tool.\n- If retrieval returns conflicting policy versions, prefer the latest active applicable policy and do not use superseded evidence.\n- If no reliable policy evidence exists, the agent must clarify or escalate rather than invent an answer.\n- If a tool result conflicts with policy text, policy explains what should happen while the operational system explains what currently happened; verify and resolve the discrepancy.",
+    "keywords": [
+      "technical",
+      "issue",
+      "technical support",
+      "student support"
+    ]
+  },
+  {
+    "chunk_id": "POL-TECHNICAL_ISSUE-001::grounding_scenarios::001",
+    "policy_id": "POL-TECHNICAL_ISSUE-001",
+    "intent": "technical_issue",
+    "category": "Technical Support",
+    "audience": "student",
+    "status": "active",
+    "section": "grounding_scenarios",
+    "text": "Policy: POL-TECHNICAL_ISSUE-001\nIntent: technical_issue\nCategory: Technical Support\nSection: grounding_scenarios\nContent: - Known policy question\n- Retrieve the matching policy and answer only from supported evidence.\n- Student-specific state\n- Retrieve policy if needed, then use the appropriate tool for current state.\n- Exception request\n- Do not promise an exception; route to human review when policy requires it.\n- Missing evidence\n- Ask for clarification or escalate instead of hallucinating.\n- Conflicting evidence\n- Resolve by policy version/precedence or escalate.",
+    "keywords": [
+      "technical",
+      "issue",
+      "technical support",
+      "student support"
+    ]
+  },
+  {
+    "chunk_id": "POL-TECHNICAL_ISSUE-001::keywords::001",
+    "policy_id": "POL-TECHNICAL_ISSUE-001",
+    "intent": "technical_issue",
+    "category": "Technical Support",
+    "audience": "student",
+    "status": "active",
+    "section": "keywords",
+    "text": "Policy: POL-TECHNICAL_ISSUE-001\nIntent: technical_issue\nCategory: Technical Support\nSection: keywords\nContent: technical, issue, technical support, student support",
+    "keywords": [
+      "technical",
+      "issue",
+      "technical support",
+      "student support"
+    ]
+  },
+  {
+    "chunk_id": "POL-TUTOR_SUPPORT-001::purpose::001",
+    "policy_id": "POL-TUTOR_SUPPORT-001",
+    "intent": "tutor_support",
+    "category": "Tutor Support",
+    "audience": "student",
+    "status": "active",
+    "section": "purpose",
+    "text": "Policy: POL-TUTOR_SUPPORT-001\nIntent: tutor_support\nCategory: Tutor Support\nSection: purpose\nContent: Tutor contact, tutor response delays, tutor sessions, and tutor-change requests.",
+    "keywords": [
+      "tutor",
+      "support",
+      "tutor support",
+      "student support"
+    ]
+  },
+  {
+    "chunk_id": "POL-TUTOR_SUPPORT-001::core_rules::001",
+    "policy_id": "POL-TUTOR_SUPPORT-001",
+    "intent": "tutor_support",
+    "category": "Tutor Support",
+    "audience": "student",
+    "status": "active",
+    "section": "core_rules",
+    "text": "Policy: POL-TUTOR_SUPPORT-001\nIntent: tutor_support\nCategory: Tutor Support\nSection: core_rules\nContent: - Use the student-to-tutor assignment and scheduling system as the source of truth.\n- Do not disclose private tutor contact information outside approved channels.\n- Tutor-change requests depend on platform availability and policy; do not guarantee replacement.\n- Conduct complaints or serious tutor-related issues require human review.",
+    "keywords": [
+      "tutor",
+      "support",
+      "tutor support",
+      "student support"
+    ]
+  },
+  {
+    "chunk_id": "POL-TUTOR_SUPPORT-001::agent_behavior::001",
+    "policy_id": "POL-TUTOR_SUPPORT-001",
+    "intent": "tutor_support",
+    "category": "Tutor Support",
+    "audience": "student",
+    "status": "active",
+    "section": "agent_behavior",
+    "text": "Policy: POL-TUTOR_SUPPORT-001\nIntent: tutor_support\nCategory: Tutor Support\nSection: agent_behavior\nContent: - Route queries whose primary intent is `tutor_support` toward the `Operations/Escalation` capability.\n- Use this document as policy/evidence. Do not treat it as proof of the student's current account state.\n- For mutable or student-specific facts, call the appropriate operational tool.\n- If retrieval returns conflicting policy versions, prefer the latest active applicable policy and do not use superseded evidence.\n- If no reliable policy evidence exists, the agent must clarify or escalate rather than invent an answer.\n- If a tool result conflicts with policy text, policy explains what should happen while the operational system explains what currently happened; verify and resolve the discrepancy.",
+    "keywords": [
+      "tutor",
+      "support",
+      "tutor support",
+      "student support"
+    ]
+  },
+  {
+    "chunk_id": "POL-TUTOR_SUPPORT-001::grounding_scenarios::001",
+    "policy_id": "POL-TUTOR_SUPPORT-001",
+    "intent": "tutor_support",
+    "category": "Tutor Support",
+    "audience": "student",
+    "status": "active",
+    "section": "grounding_scenarios",
+    "text": "Policy: POL-TUTOR_SUPPORT-001\nIntent: tutor_support\nCategory: Tutor Support\nSection: grounding_scenarios\nContent: - Known policy question\n- Retrieve the matching policy and answer only from supported evidence.\n- Student-specific state\n- Retrieve policy if needed, then use the appropriate tool for current state.\n- Exception request\n- Do not promise an exception; route to human review when policy requires it.\n- Missing evidence\n- Ask for clarification or escalate instead of hallucinating.\n- Conflicting evidence\n- Resolve by policy version/precedence or escalate.",
+    "keywords": [
+      "tutor",
+      "support",
+      "tutor support",
+      "student support"
+    ]
+  },
+  {
+    "chunk_id": "POL-TUTOR_SUPPORT-001::keywords::001",
+    "policy_id": "POL-TUTOR_SUPPORT-001",
+    "intent": "tutor_support",
+    "category": "Tutor Support",
+    "audience": "student",
+    "status": "active",
+    "section": "keywords",
+    "text": "Policy: POL-TUTOR_SUPPORT-001\nIntent: tutor_support\nCategory: Tutor Support\nSection: keywords\nContent: tutor, support, tutor support, student support",
+    "keywords": [
+      "tutor",
+      "support",
+      "tutor support",
+      "student support"
+    ]
+  },
+  {
+    "chunk_id": "POL-UNKNOWN-001::purpose::001",
+    "policy_id": "POL-UNKNOWN-001",
+    "intent": "unknown",
+    "category": "Other",
+    "audience": "student",
+    "status": "active",
+    "section": "purpose",
+    "text": "Policy: POL-UNKNOWN-001\nIntent: unknown\nCategory: Other\nSection: purpose\nContent: Queries that do not clearly match a supported student intent.",
+    "keywords": [
+      "unknown",
+      "other",
+      "student support"
+    ]
+  },
+  {
+    "chunk_id": "POL-UNKNOWN-001::core_rules::001",
+    "policy_id": "POL-UNKNOWN-001",
+    "intent": "unknown",
+    "category": "Other",
+    "audience": "student",
+    "status": "active",
+    "section": "core_rules",
+    "text": "Policy: POL-UNKNOWN-001\nIntent: unknown\nCategory: Other\nSection: core_rules\nContent: - Try to clarify ambiguous requests before guessing.\n- Search internal knowledge when the question may be answerable from approved platform information.\n- Never invent policies, account states, or unsupported processes.\n- Repeated unknown patterns should be logged for future intent-taxonomy expansion.",
+    "keywords": [
+      "unknown",
+      "other",
+      "student support"
+    ]
+  },
+  {
+    "chunk_id": "POL-UNKNOWN-001::agent_behavior::001",
+    "policy_id": "POL-UNKNOWN-001",
+    "intent": "unknown",
+    "category": "Other",
+    "audience": "student",
+    "status": "active",
+    "section": "agent_behavior",
+    "text": "Policy: POL-UNKNOWN-001\nIntent: unknown\nCategory: Other\nSection: agent_behavior\nContent: - Route queries whose primary intent is `unknown` toward the `Clarification/Escalation` capability.\n- Use this document as policy/evidence. Do not treat it as proof of the student's current account state.\n- For mutable or student-specific facts, call the appropriate operational tool.\n- If retrieval returns conflicting policy versions, prefer the latest active applicable policy and do not use superseded evidence.\n- If no reliable policy evidence exists, the agent must clarify or escalate rather than invent an answer.\n- If a tool result conflicts with policy text, policy explains what should happen while the operational system explains what currently happened; verify and resolve the discrepancy.",
+    "keywords": [
+      "unknown",
+      "other",
+      "student support"
+    ]
+  },
+  {
+    "chunk_id": "POL-UNKNOWN-001::grounding_scenarios::001",
+    "policy_id": "POL-UNKNOWN-001",
+    "intent": "unknown",
+    "category": "Other",
+    "audience": "student",
+    "status": "active",
+    "section": "grounding_scenarios",
+    "text": "Policy: POL-UNKNOWN-001\nIntent: unknown\nCategory: Other\nSection: grounding_scenarios\nContent: - Known policy question\n- Retrieve the matching policy and answer only from supported evidence.\n- Student-specific state\n- Retrieve policy if needed, then use the appropriate tool for current state.\n- Exception request\n- Do not promise an exception; route to human review when policy requires it.\n- Missing evidence\n- Ask for clarification or escalate instead of hallucinating.\n- Conflicting evidence\n- Resolve by policy version/precedence or escalate.",
+    "keywords": [
+      "unknown",
+      "other",
+      "student support"
+    ]
+  },
+  {
+    "chunk_id": "POL-UNKNOWN-001::keywords::001",
+    "policy_id": "POL-UNKNOWN-001",
+    "intent": "unknown",
+    "category": "Other",
+    "audience": "student",
+    "status": "active",
+    "section": "keywords",
+    "text": "Policy: POL-UNKNOWN-001\nIntent: unknown\nCategory: Other\nSection: keywords\nContent: unknown, other, student support",
+    "keywords": [
+      "unknown",
+      "other",
+      "student support"
+    ]
+  }
+]

@@ -1,0 +1,31 @@
+{
+  "ingested_at": "2026-08-16T19:12:35.567792+00:00",
+  "embedding_model": "BAAI/bge-small-en-v1.5",
+  "embedding_dimension": 384,
+  "policy_count": 20,
+  "chunk_count": 100,
+  "collection": "student_support_knowledge",
+  "policy_ids": [
+    "POL-ACADEMIC_QUESTION-001",
+    "POL-ACCOUNT-001",
+    "POL-ASSIGNMENT-001",
+    "POL-ATTENDANCE-001",
+    "POL-CERTIFICATE-001",
+    "POL-COURSE_ACCESS-001",
+    "POL-COURSE_CONTENT-001",
+    "POL-COURSE_INFORMATION-001",
+    "POL-ENROLLMENT-001",
+    "POL-EXAM-001",
+    "POL-FEEDBACK_COMPLAINT-001",
+    "POL-HUMAN_SUPPORT-001",
+    "POL-PAYMENT-001",
+    "POL-PROGRESS-001",
+    "POL-REFUND-001",
+    "POL-SCHEDULE-001",
+    "POL-SUBSCRIPTION-001",
+    "POL-TECHNICAL_ISSUE-001",
+    "POL-TUTOR_SUPPORT-001",
+    "POL-UNKNOWN-001"
+  ],
+  "qdrant_points": 100
+}

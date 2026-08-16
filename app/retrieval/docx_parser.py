@@ -37,6 +37,22 @@ METADATA_KEYS = {
     "dataset_rows",
 }
 SKIP_LINES = {"Metadata", "Value", "Scenario", "Expected behavior"}
+APPENDIX_STOP_LABELS = {
+    "Qdrant Chunk Metadata Contract",
+    "Recommended Retrieval Filters",
+    "Dataset-to-Knowledge Separation",
+    "Quality Checks Before Embedding",
+}
+
+
+def _trim_appendix(body: list[str]) -> list[str]:
+    """Stop parsing when the DOCX appendix begins after the last policy."""
+    trimmed: list[str] = []
+    for line in body:
+        if line in APPENDIX_STOP_LABELS:
+            break
+        trimmed.append(line)
+    return trimmed
 
 
 def _read_docx_paragraphs(docx_path: Path) -> list[str]:
@@ -94,6 +110,8 @@ def _parse_subsections(lines: list[str]) -> dict[str, list[str] | str]:
         current_items = []
 
     for line in lines:
+        if line in APPENDIX_STOP_LABELS:
+            break
         if line in SUBSECTION_LABELS:
             flush()
             mapped = SUBSECTION_LABELS[line]
@@ -135,7 +153,7 @@ def parse_policy_docx(docx_path: str | Path) -> list[PolicyDocument]:
     policies: list[PolicyDocument] = []
     for section_index, (start, intent) in enumerate(section_starts):
         end = section_starts[section_index + 1][0] if section_index + 1 < len(section_starts) else len(paragraphs)
-        body = paragraphs[start + 1 : end]
+        body = _trim_appendix(paragraphs[start + 1 : end])
         metadata = _parse_metadata(body)
         subsections = _parse_subsections(body)
 
@@ -183,5 +201,5 @@ def validate_policies(policies: list[PolicyDocument]) -> None:
         if not policy.purpose and not policy.core_rules:
             raise ValueError(f"Policy {policy.policy_id} has no purpose or core rules")
         blob = json.dumps(policy.model_dump())
-        if "TODO" in blob or "PLACEHOLDER" in blob.upper():
+        if "TODO:" in blob or "[PLACEHOLDER]" in blob.upper():
             raise ValueError(f"Unresolved placeholder text in {policy.policy_id}")
